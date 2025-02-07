@@ -67,3 +67,45 @@ section {
 #security-solutions.html .service-hero {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/random/1920x1080/?security,cyber');
 }
+
+/* About Page Specific Styles */
+.about-hero {
+    padding: 100px 0;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/random/1920x1080/?cloud,technology');
+    background-size: cover;
+}
+
+.timeline-section {
+    position: relative;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 40px;
+}
+
+.timeline-item h4 {
+    color: #0d6efd;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background: #0d6efd;
+    border-radius: 50%;
+}
+
+.tech-icons {
+    color: #0d6efd;
+    opacity: 0.8;
+}
+
+.list-group-item {
+    border-color: rgba(0,0,0,0.1);
+}
