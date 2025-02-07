@@ -41,3 +41,20 @@ section {
     z-index: 1;
     content: "";
 }
+
+/* Service Page Specific Styles */
+.service-hero {
+    padding: 100px 0;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/random/1920x1080/?cloud,architecture');
+    background-size: cover;
+    background-position: center;
+}
+
+.service-content {
+    background: #f8f9fa;
+}
+
+.list-group-item {
+    background: transparent;
+    border-color: rgba(0,0,0,0.1);
+}
