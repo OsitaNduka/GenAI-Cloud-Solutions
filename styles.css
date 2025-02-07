@@ -58,3 +58,12 @@ section {
     background: transparent;
     border-color: rgba(0,0,0,0.1);
 }
+
+/* Add to styles.css */
+#ai-integration.html .service-hero {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/random/1920x1080/?ai,technology');
+}
+
+#security-solutions.html .service-hero {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/random/1920x1080/?security,cyber');
+}
