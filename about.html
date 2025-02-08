@@ -10,22 +10,48 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/logo.jpg" alt="Logo" height="40">
-                <span class="ms-2 d-none d-sm-inline">AvonixGlobal Solutions</span>
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="index.html#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <!-- Logo & Brand Name -->
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/logo.jpg" alt="Logo" height="40">
+            <span class="ms-2">AvonixGlobal Solutions</span>
+        </a>
+
+        <!-- Toggler for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
+<!-- JavaScript to Highlight Active Nav Item -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    let links = document.querySelectorAll(".nav-link");
+    let currentURL = window.location.href;
+
+    links.forEach(link => {
+        if (link.href === currentURL) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
+    });
+});
+</script>
+
 
     <!-- About Hero -->
     <section class="about-hero bg-primary text-white py-5">
