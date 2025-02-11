@@ -118,6 +118,13 @@ form {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.custom-logo {
+    border-radius: 50%; /* Makes the image fully rounded */
+    width: 40px; /* Adjust width */
+    height: 40px; /* Ensure height matches */
+    object-fit: cover; /* Ensures the image does not stretch */
+}
+
 
 /* Styles for tablets */
 @media (max-width: 768px) {
