@@ -1,72 +1,91 @@
+/* =======================
+   General Styles
+======================= */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+h2, h4 {
+    color: #0d6efd;
+}
+
+/* =======================
+   Navigation Bar
+======================= */
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand img {
+    border-radius: 50%; /* Make logo fully rounded */
+    width: 40px; 
+    height: 40px;
+    object-fit: cover;
+}
+
+/* Highlight active menu item */
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #0d6efd !important;
+}
+
+/* =======================
+   Hero Section (Homepage)
+======================= */
 .hero {
     padding: 100px 0;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/random/1920x1080/?cloud,ai');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://source.unsplash.com/random/1920x1080/?cloud,ai');
     background-size: cover;
     background-position: center;
+    text-align: center;
+    color: white;
 }
 
-.navbar {
-    padding: 20px 0;
-}
-
-section {
-    padding: 60px 0;
-}
-
-/* Card Link Styling */
-.card {
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    cursor: pointer;
-}
-
-.stretched-link::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    content: "";
-}
-
-/* Service Page Specific Styles */
+/* =======================
+   Service Page Hero Sections
+======================= */
 .service-hero {
     padding: 100px 0;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/random/1920x1080/?cloud,architecture');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://source.unsplash.com/random/1920x1080/?cloud,architecture');
     background-size: cover;
     background-position: center;
+    color: white;
+    text-align: center;
 }
 
-.service-content {
-    background: #f8f9fa;
+/* AI Integration Page */
+.ai-integration .service-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                      url('https://source.unsplash.com/random/1920x1080/?ai,technology');
 }
 
-.list-group-item {
-    background: transparent;
-    border-color: rgba(0,0,0,0.1);
+/* Security Solutions Page */
+.security-solutions .service-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                      url('https://source.unsplash.com/random/1920x1080/?security,cyber');
 }
 
-/* Add to styles.css */
-#ai-integration.html .service-hero {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/random/1920x1080/?ai,technology');
-}
-
-#security-solutions.html .service-hero {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/random/1920x1080/?security,cyber');
-}
-
-/* About Page Specific Styles */
+/* =======================
+   About Page Styles
+======================= */
 .about-hero {
     padding: 100px 0;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/random/1920x1080/?cloud,technology');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://source.unsplash.com/random/1920x1080/?cloud,technology');
     background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
 }
 
+/* =======================
+   Timeline Section
+======================= */
 .timeline-section {
     position: relative;
 }
@@ -78,7 +97,6 @@ section {
 }
 
 .timeline-item h4 {
-    color: #0d6efd;
     position: relative;
 }
 
@@ -93,20 +111,28 @@ section {
     border-radius: 50%;
 }
 
-.tech-icons {
-    color: #0d6efd;
-    opacity: 0.8;
+/* =======================
+   Cards (Hover Effect)
+======================= */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.list-group-item {
-    border-color: rgba(0,0,0,0.1);
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
+/* =======================
+   Contact Form
+======================= */
 .contact {
-    display: grid;
-    place-items: center; /* Centers both horizontally & vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    padding: 20px;
+    text-align: center;
 }
 
 form {
@@ -118,26 +144,42 @@ form {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.custom-logo {
-    border-radius: 50%; /* Makes the image fully rounded */
-    width: 40px; /* Adjust width */
-    height: 40px; /* Ensure height matches */
-    object-fit: cover; /* Ensures the image does not stretch */
+/* =======================
+   Footer
+======================= */
+footer {
+    background: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
+footer .social-links a {
+    font-size: 20px;
+    margin: 0 10px;
+    color: white;
+    transition: color 0.3s;
+}
 
-/* Styles for tablets */
+footer .social-links a:hover {
+    color: #0d6efd;
+}
+
+/* =======================
+   Responsive Design
+======================= */
+
+/* Tablets */
 @media (max-width: 768px) {
     .container {
-      width: 95%;
+        width: 95%;
     }
-  }
-  
-  /* Styles for mobile phones */
-  @media (max-width: 480px) {
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
     .container {
-      width: 100%;
-      padding: 10px;
+        width: 100%;
+        padding: 10px;
     }
-  }
-  
+}
