@@ -41,7 +41,7 @@
                 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact.html">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -52,7 +52,7 @@
         <div class="container text-center">
             <h1 class="display-4">AI-Driven Cloud Solutions</h1>
             <p class="lead">Transform your business with our cutting-edge AI and cloud architecture services</p>
-            <a href="#contact" class="btn btn-light btn-lg mt-3">Get Started</a>
+            <a href="#contact.html" class="btn btn-light btn-lg mt-3">Get Started</a>
         </div>
     </section>
 
@@ -96,54 +96,43 @@
                         </div>
                     </div>
                 </div>
+                <!-- Security Solutions Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 position-relative">
+                        <a href="security-solutions.html" class="stretched-link" aria-label="Learn more about Security Solutions"></a>
+                        <div class="card-body">
+                            <i class="fas fa-shield-alt fa-3x text-primary"></i>
+                            <h3 class="card-title mt-3">Security Solutions</h3>
+                            <p class="card-text">Enterprise-grade cloud security and compliance management.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Security Solutions Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 position-relative">
+                        <a href="security-solutions.html" class="stretched-link" aria-label="Learn more about Security Solutions"></a>
+                        <div class="card-body">
+                            <i class="fas fa-shield-alt fa-3x text-primary"></i>
+                            <h3 class="card-title mt-3">Security Solutions</h3>
+                            <p class="card-text">Enterprise-grade cloud security and compliance management.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Security Solutions Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 position-relative">
+                        <a href="security-solutions.html" class="stretched-link" aria-label="Learn more about Security Solutions"></a>
+                        <div class="card-body">
+                            <i class="fas fa-shield-alt fa-3x text-primary"></i>
+                            <h3 class="card-title mt-3">Security Solutions</h3>
+                            <p class="card-text">Enterprise-grade cloud security and compliance management.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <form id="contactForm">
-        <div class="mb-3">
-            <label for="name" class="form-label visually-hidden">Name</label>
-            <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label visually-hidden">Email</label>
-            <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
-        </div>
-        <div class="mb-3">
-            <label for="message" class="form-label visually-hidden">Message</label>
-            <textarea name="message" id="message" class="form-control" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-    </form>
-    <div id="success-message" class="alert alert-success mt-3" style="display: none;">
-        Message sent successfully!
-    </div>
     
-    <script>
-    document.getElementById("contactForm").addEventListener("submit", async function(event) {
-        event.preventDefault(); // Prevent default form submission
-    
-        let form = event.target;
-        let formData = new FormData(form);
-    
-        try {
-            let response = await fetch("https://formspree.io/f/xanqbddd", {
-                method: "POST",
-                body: formData,
-                headers: { "Accept": "application/json" }
-            });
-    
-            if (response.ok) {
-                document.getElementById("success-message").style.display = "block";
-                form.reset(); // Clear form after success
-            } else {
-                alert("Error sending message. Please try again.");
-            }
-        } catch (error) {
-            console.error("Error:", error);
-            alert("An error occurred. Please try again.");
-        }
-    });
-    </script>
     
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
