@@ -43,42 +43,9 @@
         </div>
     </nav>
 
-    <!-- JavaScript to Highlight Active Nav Item -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let links = document.querySelectorAll(".nav-link");
-            let currentPath = window.location.pathname;
-
-            links.forEach(link => {
-                if (link.getAttribute("href") === currentPath) {
-                    link.classList.add("active");
-                } else {
-                    link.classList.remove("active");
-                }
-            });
-        });
-    </script>
-
-    <!-- Contact Form Section -->
-    <div class="container d-flex justify-content-center mt-5">
-        <form id="contactForm" class="w-50 text-center">
-            <h2>Contact Us</h2>
-            <p>📩 How Can We Help? – We’re here to assist you. Send us a message, and we’ll get back to you as soon as possible.</p>
-
-            <div class="mb-3">
-                <label for="name" class="form-label visually-hidden">Name</label>
-                <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label visually-hidden">Email</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label visually-hidden">Message</label>
-                <textarea name="message" id="message" class="form-control" rows="5" placeholder="Message" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
+    <!-- Profile Picture -->
+    <div class="text-center mt-5">
+        <img src="assets/profile.jpg" alt="Ositadimma Nduka Profile" class="profile-pic">
     </div>
 
     <!-- Success Message -->
@@ -87,34 +54,6 @@
             Message sent successfully!
         </div>
     </div>
-
-    <!-- Contact Form Script -->
-    <script>
-        document.getElementById("contactForm").addEventListener("submit", async function(event) {
-            event.preventDefault(); // Prevent default form submission
-
-            let form = event.target;
-            let formData = new FormData(form);
-
-            try {
-                let response = await fetch("https://formspree.io/f/xanqbddd", {
-                    method: "POST",
-                    body: formData,
-                    headers: { "Accept": "application/json" }
-                });
-
-                if (response.ok) {
-                    document.getElementById("success-message").style.display = "block";
-                    form.reset(); // Clear form after success
-                } else {
-                    alert("Error sending message. Please try again.");
-                }
-            } catch (error) {
-                console.error("Error:", error);
-                alert("An error occurred. Please try again.");
-            }
-        });
-    </script>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4 mt-5">
@@ -133,3 +72,4 @@
 
 </body>
 </html>
+
