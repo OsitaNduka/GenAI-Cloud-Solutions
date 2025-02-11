@@ -102,7 +102,7 @@ section {
     border-color: rgba(0,0,0,0.1);
 }
 
-#contact {
+.contact {
     display: grid;
     place-items: center; /* Centers both horizontally & vertically */
     min-height: 100vh;
