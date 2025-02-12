@@ -250,6 +250,79 @@ form {
 .service-content .card:hover {
     transform: translateY(-5px);
 }
+
+/* Hero Section Styles */
+.service-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Process Timeline */
+.process-step {
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-5px);
+}
+
+.step-icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background: #f8f9fa;
+    margin: 0 auto;
+}
+
+/* Technology Logos */
+.tech-stack {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.tech-logo {
+    max-height: 40px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.tech-logo:hover {
+    opacity: 1;
+}
+
+/* Card Enhancements */
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
 /* =======================
    Footer
 ======================= */
