@@ -53,13 +53,22 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
-    <!-- About Hero -->
-    <section class="about-hero bg-primary text-white py-5">
-        <div class="container text-center">
+    <!-- About Hero Section -->
+    <section class="hero-section position-relative">
+        <img src="assets/aboutme.jpg" 
+             alt="About Ositadimma Nduka" 
+             class="w-100 hero-image" 
+             srcset="assets/aboutme.jpg 1920w,
+                     assets/aboutme.jpg 1200w,
+                     assets/aboutme.jpg 800w"
+             sizes="100vw"
+             loading="eager"
+             style="max-height: 400px; object-fit: cover; object-position: center;">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: 0.6;"></div>
+        <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
             <h1 class="display-4">Ositadimma Nduka</h1>
             <p class="lead mb-4">AI & Cloud for Enterprise Architect | Agile Project Manager</p>
-            <img src="assets/profile.jpg" alt="Ositadimma Nduka Profile" class="profile-pic">
-            <div class="badge-container">
+            <div class="badge-container mt-3">
                 <span class="badge bg-light text-dark me-2">AWS Certified</span>
                 <span class="badge bg-light text-dark me-2">TOGAF Practitioner</span>
                 <span class="badge bg-light text-dark">Scrum Master</span>
