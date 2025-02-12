@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Security Solutions | AvonixGlobal AI & Cloud Solutions</title>
+    <title>Security Solutions | AvonixGlobal AI & Cloud Solutions</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -22,7 +22,21 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="ai-integration.html">AI Integration</a></li>
+                            <li><a class="dropdown-item" href="cloud-solutions.html">Cloud Solutions</a></li>
+                            <li><a class="dropdown-item" href="cloud-migration.html">Cloud Migration</a></li>
+                            <li><a class="dropdown-item" href="governance-compliance.html">Governance & Compliance</a></li>
+                            <li><a class="dropdown-item" href="enterprise-architecture.html">Enterprise Architecture</a></li>
+                            <li><a class="dropdown-item" href="cybersecurity.html">Cybersecurity</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="consulting.html">Consulting Services</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
                 </ul>
@@ -30,8 +44,8 @@
         </div>
     </nav>
 
-    <!-- Security Hero Section -->
-    <section class="service-hero position-relative">
+    <!-- Hero Section -->
+    <section class="hero-section position-relative">
         <img src="assets/cloud-security.jpg" 
              alt="Cloud Security Solutions" 
              class="hero-image w-100" 
@@ -41,83 +55,67 @@
              sizes="100vw"
              loading="eager"
              style="max-height: 400px; object-fit: cover; object-position: center;">
-        <div class="hero-overlay"></div>
-        <div class="container position-relative text-white py-5">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h1 class="display-4">Cloud Security Solutions</h1>
-                    <p class="lead">Protect your cloud infrastructure with enterprise-grade security</p>
-                </div>
-            </div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: 0.6;"></div>
+        <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+            <h1 class="display-4">Security Solutions</h1>
+            <p class="lead">Protecting your digital assets with enterprise-grade security</p>
         </div>
     </section>
 
-    <!-- Security Content Section -->
-    <section class="service-content py-5 bg-light">
+    <!-- Main Content -->
+    <section class="service-content py-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <h2 class="text-primary mb-4">Comprehensive Security</h2>
-                    <p class="lead text-dark mb-5">Ensure compliance and protect your assets with our multi-layered security approach.</p>
-                    
-                    <!-- Security Pillars Grid -->
-                    <div class="row g-4 mt-4">
-                        <div class="col-md-6">
-                            <div class="card h-100 border-0 shadow-sm hover-card">
-                                <div class="card-body p-4">
-                                    <i class="fas fa-user-shield fa-2x text-primary mb-3"></i>
-                                    <h4 class="text-primary">Identity Security</h4>
-                                    <ul class="list-unstyled">
-                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Multi-factor Authentication</li>
-                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Role-based Access Control</li>
-                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Single Sign-On (SSO)</li>
-                                    </ul>
+                    <h2>Our Security Approach</h2>
+                    <p class="lead mb-5">We implement comprehensive security solutions that protect your infrastructure while ensuring compliance and business continuity.</p>
+
+                    <!-- Security Components -->
+                    <div class="mt-5">
+                        <h3>Core Security Components</h3>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm hover-card">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-shield-alt fa-2x text-primary mb-3"></i>
+                                        <h4 class="text-primary">Network Security</h4>
+                                        <p>Advanced firewall protection and threat detection systems.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card h-100 border-0 shadow-sm hover-card">
-                                <div class="card-body p-4">
-                                    <i class="fas fa-shield-alt fa-2x text-primary mb-3"></i>
-                                    <h4 class="text-primary">Network Security</h4>
-                                    <ul class="list-unstyled">
-                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Firewall Protection</li>
-                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>DDoS Mitigation</li>
-                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>VPN Solutions</li>
-                                    </ul>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm hover-card">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-user-shield fa-2x text-primary mb-3"></i>
+                                        <h4 class="text-primary">Identity Protection</h4>
+                                        <p>Multi-factor authentication and access management.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card h-100 border-0 shadow-sm hover-card">
-                                <div class="card-body p-4">
-                                    <i class="fas fa-database fa-2x text-primary mb-3"></i>
-                                    <h4 class="text-primary">Data Security</h4>
-                                    <ul class="list-unstyled">
-                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Encryption at Rest</li>
-                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Encryption in Transit</li>
-                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Key Management</li>
-                                    </ul>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm hover-card">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-database fa-2x text-primary mb-3"></i>
+                                        <h4 class="text-primary">Data Security</h4>
+                                        <p>End-to-end encryption and secure data management.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card h-100 border-0 shadow-sm hover-card">
-                                <div class="card-body p-4">
-                                    <i class="fas fa-search fa-2x text-primary mb-3"></i>
-                                    <h4 class="text-primary">Monitoring & Detection</h4>
-                                    <ul class="list-unstyled">
-                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>24/7 Threat Monitoring</li>
-                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Anomaly Detection</li>
-                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Security Analytics</li>
-                                    </ul>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm hover-card">
+                                    <div class="card-body p-4">
+                                        <i class="fas fa-search fa-2x text-primary mb-3"></i>
+                                        <h4 class="text-primary">Threat Monitoring</h4>
+                                        <p>24/7 security monitoring and incident response.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Security Framework -->
                     <div class="mt-5">
-                        <h3 class="text-primary mb-4">Security Framework</h3>
+                        <h3>Security Framework</h3>
                         <div class="row g-4">
                             <div class="col-md-4">
                                 <div class="card h-100 border-0 shadow-sm hover-card">
@@ -126,7 +124,7 @@
                                             <i class="fas fa-clipboard-list fa-2x text-primary"></i>
                                         </div>
                                         <h5 class="text-primary">Assessment</h5>
-                                        <p class="text-muted">Comprehensive vulnerability analysis and risk assessment</p>
+                                        <p class="text-muted">Comprehensive security evaluation</p>
                                     </div>
                                 </div>
                             </div>
@@ -136,8 +134,8 @@
                                         <div class="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block mb-3">
                                             <i class="fas fa-shield-virus fa-2x text-primary"></i>
                                         </div>
-                                        <h5 class="text-primary">Protection</h5>
-                                        <p class="text-muted">Proactive security measures and threat prevention</p>
+                                        <h5 class="text-primary">Implementation</h5>
+                                        <p class="text-muted">Security controls deployment</p>
                                     </div>
                                 </div>
                             </div>
@@ -145,10 +143,10 @@
                                 <div class="card h-100 border-0 shadow-sm hover-card">
                                     <div class="card-body p-4 text-center">
                                         <div class="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block mb-3">
-                                            <i class="fas fa-history fa-2x text-primary"></i>
+                                            <i class="fas fa-sync fa-2x text-primary"></i>
                                         </div>
-                                        <h5 class="text-primary">Response</h5>
-                                        <p class="text-muted">Rapid incident response and recovery procedures</p>
+                                        <h5 class="text-primary">Monitoring</h5>
+                                        <p class="text-muted">Continuous security oversight</p>
                                     </div>
                                 </div>
                             </div>
@@ -156,30 +154,35 @@
                     </div>
                 </div>
 
+                <!-- Sidebar -->
                 <div class="col-lg-4">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body p-4">
+                    <div class="card sticky-top border-0 shadow-sm" style="top: 20px;">
+                        <div class="card-body">
                             <h5 class="text-primary mb-4">Security Standards</h5>
-                            <div class="d-flex justify-content-around my-4">
-                                <div class="rounded-circle bg-primary bg-opacity-10 p-3">
-                                    <i class="fas fa-shield-alt fa-2x text-primary"></i>
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>GDPR Compliance</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>HIPAA Compliance</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>ISO 27001 Certified</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>SOC 2 Compliance</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>PCI DSS Compliance</li>
+                            </ul>
+                            <hr>
+                            <h5 class="text-primary mb-3">Our Process</h5>
+                            <div class="process-steps">
+                                <div class="step">
+                                    <i class="fas fa-search text-primary"></i>
+                                    <p>Audit</p>
                                 </div>
-                                <div class="rounded-circle bg-primary bg-opacity-10 p-3">
-                                    <i class="fas fa-lock fa-2x text-primary"></i>
+                                <div class="step">
+                                    <i class="fas fa-shield-alt text-primary"></i>
+                                    <p>Secure</p>
                                 </div>
-                                <div class="rounded-circle bg-primary bg-opacity-10 p-3">
-                                    <i class="fas fa-user-shield fa-2x text-primary"></i>
+                                <div class="step">
+                                    <i class="fas fa-chart-line text-primary"></i>
+                                    <p>Monitor</p>
                                 </div>
                             </div>
-                            <div class="mb-4">
-                                <h6 class="text-primary">Compliance:</h6>
-                                <ul class="list-unstyled">
-                                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>GDPR</li>
-                                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>HIPAA</li>
-                                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>ISO 27001</li>
-                                </ul>
-                            </div>
-                            <a href="contact.html" class="btn btn-primary w-100">Request Security Audit</a>
+                            <a href="contact.html" class="btn btn-primary w-100 mt-4">Schedule Security Consultation</a>
                         </div>
                     </div>
                 </div>
@@ -200,6 +203,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
 </body>
+</html>
 </html>
