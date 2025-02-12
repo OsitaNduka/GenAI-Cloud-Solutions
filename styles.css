@@ -464,3 +464,33 @@ footer .social-links a:hover {
     gap: 1rem;
     align-items: center;
 }
+
+/* Tech Stack Consistency */
+.tech-category {
+    margin-bottom: 1.5rem;
+}
+
+.tech-category:last-child {
+    margin-bottom: 0;
+}
+
+/* Navigation Consistency */
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.dropdown-item {
+    padding: 0.5rem 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    transform: translateX(5px);
+}
