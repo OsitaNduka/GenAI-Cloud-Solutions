@@ -395,3 +395,28 @@ footer .social-links a:hover {
 .bg-primary.bg-opacity-10 {
     background-color: rgba(13, 110, 253, 0.1) !important;
 }
+
+.profile-image {
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+.badge {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.badge i {
+    font-size: 1rem;
+}
