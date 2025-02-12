@@ -290,20 +290,46 @@ form {
 
 /* Technology Logos */
 .tech-stack {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 1rem 0;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .tech-logo {
-    max-height: 40px;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    filter: grayscale(100%);
 }
 
 .tech-logo:hover {
-    opacity: 1;
+    transform: translateY(-3px);
+    filter: grayscale(0%);
+}
+
+.tech-category h6 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tech-icons i {
+    color: #6c757d;
+    transition: all 0.3s ease;
+}
+
+.tech-icons i:hover {
+    color: #0d6efd;
+    transform: translateY(-3px);
+}
+
+.tech-logos {
+    background: white;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 /* Card Enhancements */
@@ -430,12 +456,6 @@ footer .social-links a:hover {
 .tech-stack .tech-icons i:hover {
     color: #0d6efd;
     transform: translateY(-3px);
-}
-
-.tech-category h6 {
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
 }
 
 .tech-icons {
