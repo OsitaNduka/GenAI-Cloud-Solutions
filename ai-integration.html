@@ -46,7 +46,15 @@
 
     <!-- Hero Section with AI Image -->
     <section class="service-hero position-relative">
-        <img src="assets/project3.jpg" alt="AI Integration" class="hero-image w-100" style="max-height: 400px; object-fit: cover;">
+        <img src="assets/project3.jpg" 
+             alt="AI Integration" 
+             class="hero-image w-100" 
+             srcset="assets/project3.jpg 1920w,
+                     assets/project3.jpg 1200w,
+                     assets/project3.jpg 800w"
+             sizes="100vw"
+             loading="eager"
+             style="max-height: 400px; object-fit: cover; object-position: center;">
         <div class="hero-overlay"></div>
         <div class="container position-relative text-white py-5">
             <div class="row">
