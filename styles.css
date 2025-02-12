@@ -176,6 +176,24 @@ form {
     color: #333;
 }
 
+.service-content img {
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-content img:hover {
+    transform: scale(1.02);
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
 /* =======================
    Footer
 ======================= */
