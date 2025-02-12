@@ -115,11 +115,13 @@ h2, h4 {
    Cards (Hover Effect)
 ======================= */
 .card {
-    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
@@ -186,16 +188,6 @@ form {
     transform: scale(1.02);
 }
 
-.card {
-    transition: transform 0.3s ease;
-    border: none;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
 .list-unstyled li {
     margin-bottom: 0.5rem;
 }
@@ -207,6 +199,7 @@ form {
 .text-warning {
     color: #ffc107;
 }
+
 .hero-section {
     position: relative;
     overflow: hidden;
@@ -218,6 +211,7 @@ form {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    max-height: 400px;
 }
 
 .process-steps {
@@ -353,6 +347,19 @@ footer .social-links a:hover {
     .container {
         width: 95%;
     }
+    
+    .hero-section {
+        height: 300px;
+    }
+    
+    .process-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .step {
+        margin-bottom: 1.5rem;
+    }
 }
 
 /* Mobile Phones */
@@ -360,5 +367,18 @@ footer .social-links a:hover {
     .container {
         width: 100%;
         padding: 10px;
+    }
+    
+    .hero-section {
+        height: 200px;
+    }
+    
+    .timeline-item {
+        padding-left: 20px;
+    }
+    
+    .profile-pic {
+        width: 100px;
+        height: 100px;
     }
 }
