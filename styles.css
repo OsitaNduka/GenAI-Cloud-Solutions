@@ -420,3 +420,27 @@ footer .social-links a:hover {
 .badge i {
     font-size: 1rem;
 }
+
+.tech-stack .tech-icons i {
+    color: #6c757d;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.tech-stack .tech-icons i:hover {
+    color: #0d6efd;
+    transform: translateY(-3px);
+}
+
+.tech-category h6 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
