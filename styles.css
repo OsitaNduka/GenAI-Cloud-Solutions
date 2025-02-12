@@ -188,10 +188,24 @@ form {
 
 .card {
     transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .card:hover {
     transform: translateY(-5px);
+}
+
+.list-unstyled li {
+    margin-bottom: 0.5rem;
+}
+
+.text-success {
+    color: #28a745;
+}
+
+.text-warning {
+    color: #ffc107;
 }
 
 /* =======================
