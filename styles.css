@@ -297,9 +297,8 @@ form {
 }
 
 .tech-logo {
-    height: 40px;
+    height: 50px;
     width: auto;
-    object-fit: contain;
     transition: transform 0.3s ease;
     filter: grayscale(100%);
 }
@@ -493,4 +492,33 @@ footer .social-links a:hover {
 .dropdown-item:hover {
     background-color: #f8f9fa;
     transform: translateX(5px);
+}
+
+/* Process Steps */
+.process-steps .step {
+    text-align: center;
+    position: relative;
+}
+
+.process-steps .step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 20px;
+    border-left: 2px dashed #dee2e6;
+}
+
+.process-steps .step h6 {
+    margin: 0.5rem 0;
+    font-weight: 600;
+}
+
+.process-steps .step .rounded-circle {
+    transition: transform 0.3s ease;
+}
+
+.process-steps .step:hover .rounded-circle {
+    transform: scale(1.1);
 }
