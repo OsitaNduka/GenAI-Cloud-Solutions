@@ -45,20 +45,20 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section position-relative">
+    <section class="hero-section position-relative py-4" style="height: 250px;">
         <img src="assets/cloud-security.jpg" 
              alt="Cloud Security Solutions" 
-             class="hero-image w-100" 
+             class="w-100 hero-image position-absolute top-0 start-0" 
              srcset="assets/cloud-security.jpg 1920w,
                      assets/cloud-security.jpg 1200w,
                      assets/cloud-security.jpg 800w"
              sizes="100vw"
              loading="eager"
-             style="max-height: 400px; object-fit: cover; object-position: center;">
+             style="object-fit: cover; object-position: top center; height: 100%;">
         <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: 0.6;"></div>
-        <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
-            <h1 class="display-4">Security Solutions</h1>
-            <p class="lead">Protecting your digital assets with enterprise-grade security</p>
+        <div class="container text-center position-relative text-white d-flex flex-column justify-content-center" style="height: 100%;">
+            <h1 class="display-5 mb-2">Security Solutions</h1>
+            <p class="lead mb-0">Protecting your digital assets with enterprise-grade security</p>
         </div>
     </section>
 
@@ -204,5 +204,4 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
 </html>
