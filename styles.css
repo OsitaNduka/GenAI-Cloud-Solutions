@@ -522,3 +522,27 @@ footer .social-links a:hover {
 .process-steps .step:hover .rounded-circle {
     transform: scale(1.1);
 }
+
+/* Custom animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animate__fadeIn {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Custom hover effects */
+.hover-shadow {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-shadow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive spacing */
+.py-6 { padding: 4rem 0; }
+.min-vh-50 { min-height: 50vh; }
