@@ -347,3 +347,50 @@
   50% { transform: translate(-50%, 10px); opacity: 1; }
   100% { transform: translate(-50%, 20px); opacity: 0; }
 }
+
+/* Custom Properties */
+:root {
+  --bs-primary-rgb: 13, 110, 253;
+  --bs-success-rgb: 25, 135, 84;
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 50vh;
+}
+
+.hero-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+}
+
+/* Form Validation */
+.was-validated .form-control:invalid {
+  border-color: var(--bs-danger);
+}
+
+.was-validated .form-control:valid {
+  border-color: var(--bs-success);
+}
+
+/* Icon Containers */
+.icon-container {
+  width: 3rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate__fadeInDown {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate__fadeInUp {
+  animation: fadeIn 0.5s ease-out 0.2s backwards;
+}
