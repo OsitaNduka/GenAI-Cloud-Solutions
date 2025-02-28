@@ -52,15 +52,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" 
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" 
                            data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"
                            id="servicesDropdown">
                             Services
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item d-flex gap-2 align-items-center" href="enterprise-architecture.html">
+                            <li><a class="dropdown-item d-flex gap-2 align-items-center active" href="enterprise-architecture.html">
                                 <i class="fas fa-sitemap fa-fw text-primary"></i>Enterprise Architecture</a></li>
                             <li><a class="dropdown-item d-flex gap-2 align-items-center" href="cloud-solutions.html">
                                 <i class="fas fa-cloud fa-fw text-primary"></i>Cloud Solutions</a></li>
@@ -77,8 +77,8 @@
     <header class="hero-section position-relative overflow-hidden min-vh-50" aria-labelledby="main-heading">
         <div class="hero-gradient"></div>
         <picture>
-            <source srcset="assets/enterprise-architecture.jpg 800w, 
-                            assets/enterprise-architecture.jpg 1200w"
+            <source srcset="assets/enterprise-architecture.webp 800w, 
+                            assets/enterprise-architecture.webp 1200w"
                     sizes="(max-width: 800px) 800px, 1200px"
                     type="image/webp">
             <img src="assets/enterprise-architecture.jpg" 
@@ -96,8 +96,8 @@
                 Align Technology Investments with Business Objectives
             </p>
             <div class="d-flex gap-3 justify-content-center animate__animated animate__fadeInUp animate__delay-2s">
-                <a href="#contact" class="btn btn-primary btn-lg hover-scale">Start Your Assessment</a>
-                <a href="#benefits" class="btn btn-outline-light btn-lg hover-scale">View Benefits</a>
+                <a href="#contact-section" class="btn btn-primary btn-lg hover-scale">Start Your Assessment</a>
+                <a href="#benefits-section" class="btn btn-outline-light btn-lg hover-scale">View Benefits</a>
             </div>
         </div>
     </header>
@@ -114,7 +114,7 @@
                             <p class="lead mb-5">Transform your organization with our TOGAF 9.2 certified solutions, combining strategic planning with actionable technology roadmaps.</p>
                             
                             <!-- Value Proposition Section -->
-                            <div class="row g-4 mb-6">
+                            <div class="row g-4 mb-6" id="benefits-section">
                                 <div class="col-md-6">
                                     <div class="card h-100 value-card">
                                         <div class="card-body">
@@ -146,7 +146,7 @@
                             <!-- Enhanced Architecture Framework -->
                             <section class="mb-6" aria-labelledby="framework-heading">
                                 <h3 id="framework-heading" class="h2 mb-4">Holistic Architecture Framework</h3>
-                                <div class="alert architecture-alert d-flex align-items-center mb-4">
+                                <div class="alert alert-info d-flex align-items-center mb-4">
                                     <i class="fas fa-info-circle me-3 fa-lg"></i>
                                     Our TOGAF ADM approach integrates Agile delivery for maximum business impact
                                 </div>
@@ -167,7 +167,7 @@
                                 <!-- Interactive Framework Cards -->
                                 <div class="row g-4 framework-layers">
                                     <div class="col-md-6 col-lg-3">
-                                        <div class="card layer-card">
+                                        <div class="card layer-card h-100">
                                             <div class="card-body text-center">
                                                 <i class="fas fa-users fa-2x text-primary mb-3"></i>
                                                 <h4 class="h5">Business Architecture</h4>
@@ -175,19 +175,185 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Add other layers here -->
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="card layer-card h-100">
+                                            <div class="card-body text-center">
+                                                <i class="fas fa-window-restore fa-2x text-primary mb-3"></i>
+                                                <h4 class="h5">Application Architecture</h4>
+                                                <p class="small mb-0">Application portfolio rationalization</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="card layer-card h-100">
+                                            <div class="card-body text-center">
+                                                <i class="fas fa-database fa-2x text-primary mb-3"></i>
+                                                <h4 class="h5">Data Architecture</h4>
+                                                <p class="small mb-0">Data governance and information flow modeling</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="card layer-card h-100">
+                                            <div class="card-body text-center">
+                                                <i class="fas fa-server fa-2x text-primary mb-3"></i>
+                                                <h4 class="h5">Technology Architecture</h4>
+                                                <p class="small mb-0">Infrastructure optimization and standards</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </section>
-                        </article>
-                    </div>
 
-                    <!-- Enhanced Sidebar -->
-                    <aside class="col-lg-4">
-                        <div class="card border-0 shadow-sm sticky-top">
+                            <!-- Methodology Section -->
+                            <section class="mb-6" aria-labelledby="methodology-heading">
+                                <h3 id="methodology-heading" class="h2 mb-4">Our Proven Methodology</h3>
+                                <p class="mb-4">We implement a customized TOGAF Architecture Development Method (ADM) tailored to your organization's maturity level and specific needs.</p>
+                                
+                                <div class="methodology-timeline position-relative mb-5">
+                                    <div class="timeline-item d-flex mb-4">
+                                        <div class="timeline-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-search"></i>
+                                        </div>
+                                        <div class="timeline-content ms-4">
+                                            <h4 class="h5 mb-2">Discovery & Assessment</h4>
+                                            <p class="mb-0">Comprehensive analysis of your current architecture landscape and identification of strategic gaps</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item d-flex mb-4">
+                                        <div class="timeline-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-drafting-compass"></i>
+                                        </div>
+                                        <div class="timeline-content ms-4">
+                                            <h4 class="h5 mb-2">Target Architecture Design</h4>
+                                            <p class="mb-0">Development of future-state architecture aligned with business strategy and technology trends</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item d-flex mb-4">
+                                        <div class="timeline-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-road"></i>
+                                        </div>
+                                        <div class="timeline-content ms-4">
+                                            <h4 class="h5 mb-2">Roadmap Development</h4>
+                                            <p class="mb-0">Creation of phased implementation plan with clear milestones and dependency mapping</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item d-flex">
+                                        <div class="timeline-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-cogs"></i>
+                                        </div>
+                                        <div class="timeline-content ms-4">
+                                            <h4 class="h5 mb-2">Governance Implementation</h4>
+                                            <p class="mb-0">Establishment of sustainable architecture governance practices and review boards</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Case Study Section -->
+                            <section class="mb-6" aria-labelledby="casestudy-heading">
+                                <h3 id="casestudy-heading" class="h2 mb-4">Success Stories</h3>
+                                
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <span class="badge bg-primary me-2">Financial Services</span>
+                                            <span class="text-muted small">Global Banking Enterprise</span>
+                                        </div>
+                                        <h4 class="h5 mb-3">Digital Transformation Architecture</h4>
+                                        <p class="mb-3">Developed a comprehensive enterprise architecture to support the bank's digital transformation initiative, resulting in:</p>
+                                        <ul class="mb-3">
+                                            <li>42% reduction in application portfolio</li>
+                                            <li>$4.2M annual savings in IT operational costs</li>
+                                            <li>65% improvement in time-to-market for new digital services</li>
+                                        </ul>
+                                        <a href="case-studies.html#banking" class="btn btn-sm btn-outline-primary">
+                                            Read Full Case Study <i class="fas fa-arrow-right ms-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <span class="badge bg-primary me-2">Healthcare</span>
+                                            <span class="text-muted small">National Healthcare Provider</span>
+                                        </div>
+                                        <h4 class="h5 mb-3">Interoperability Architecture Framework</h4>
+                                        <p class="mb-3">Designed and implemented an enterprise architecture enabling secure interoperability between legacy systems and modern cloud platforms:</p>
+                                        <ul class="mb-3">
+                                            <li>Integration of 17 disparate clinical systems</li>
+                                            <li>Reduced data exchange latency by 78%</li>
+                                            <li>HIPAA-compliant security architecture implementation</li>
+                                        </ul>
+                                        <a href="case-studies.html#healthcare" class="btn btn-sm btn-outline-primary">
+                                            Read Full Case Study <i class="fas fa-arrow-right ms-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Contact Section -->
+                            <section id="contact-section" class="mb-6" aria-labelledby="contact-heading">
+                                <div class="card bg-primary-gradient text-white">
+                                    <div class="card-body p-5">
+                                        <h3 id="contact-heading" class="h2 mb-4">Ready to Transform Your Enterprise Architecture?</h3>
+                                        <p class="mb-4">Schedule a no-obligation consultation with our TOGAF-certified architects to discuss your specific needs.</p>
+                                        <form class="needs-validation" novalidate>
+                                            <div class="row g-3">
+                                                <div class="col-md-6">
+                                                    <label for="name" class="form-label">Full Name</label>
+                                                    <input type="text" class="form-control" id="name" required>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="company" class="form-label">Company</label>
+                                                    <input type="text" class="form-control" id="company" required>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email" class="form-label">Business Email</label>
+                                                    <input type="email" class="form-control" id="email" required>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="phone" class="form-label">Phone</label>
+                                                    <input type="tel" class="form-control" id="phone">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="message" class="form-label">How can we help?</label>
+                                                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="privacy-policy" required>
+                                                        <label class="form-check-label small" for="privacy-policy">
+                                                            I agree to the <a href="privacy.html" class="text-white">privacy policy</a>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 mt-4">
+                                                    <button type="submit" class="btn btn-light hover-scale">
+                                                        <i class="fas fa-paper-plane me-2"></i>Submit Request
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                    </article>
+                </div>
+
+                <!-- Enhanced Sidebar -->
+                <div class="col-lg-4">
+                    <aside>
+                        <div class="card border-0 shadow-sm sticky-top mb-5">
                             <div class="card-body">
                                 <h3 class="h5 mb-4">Why Choose Us?</h3>
                                 <div class="d-flex mb-4">
-                                    <div class="badge-container bg-primary-soft">
+                                    <div class="badge-container bg-primary-soft p-3 rounded-circle">
                                         <span class="h5 mb-0">98%</span>
                                     </div>
                                     <div class="ms-3">
@@ -204,6 +370,14 @@
                                         <i class="fas fa-shield-alt text-success me-2"></i>
                                         ISO 27001 Certified
                                     </li>
+                                    <li class="mb-3">
+                                        <i class="fas fa-graduation-cap text-success me-2"></i>
+                                        Lead EA Practitioners with 15+ Years Experience
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fas fa-users text-success me-2"></i>
+                                        Global Delivery Team
+                                    </li>
                                 </ul>
                                 <hr>
                                 <h4 class="h5 text-primary mb-4">Technology Partners</h4>
@@ -211,93 +385,153 @@
                                     <div class="d-flex flex-wrap gap-3 align-items-center">
                                         <img src="assets/sparx-logo.svg" alt="Sparx Systems" class="tech-logo" loading="lazy">
                                         <img src="assets/aws-logo.svg" alt="AWS Partner" class="tech-logo" loading="lazy">
+                                        <img src="assets/microsoft-logo.svg" alt="Microsoft Partner" class="tech-logo" loading="lazy">
+                                        <img src="assets/servicenow-logo.svg" alt="ServiceNow Partner" class="tech-logo" loading="lazy">
                                     </div>
                                 </div>
-                                <a href="#contact" class="btn btn-primary w-100 mt-4 hover-scale">
+                                <a href="#contact-section" class="btn btn-primary w-100 mt-4 hover-scale">
                                     <i class="fas fa-calendar-check me-2"></i>Schedule Consultation
                                 </a>
+                            </div>
+                        </div>
+
+                        <!-- Resources -->
+                        <div class="card border-0 shadow-sm mb-5">
+                            <div class="card-body">
+                                <h3 class="h5 mb-4">EA Resources</h3>
+                                <ul class="list-unstyled resource-list">
+                                    <li class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-file-pdf text-danger me-3"></i>
+                                        <a href="#" class="resource-link">EA Maturity Assessment Guide</a>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-file-pdf text-danger me-3"></i>
+                                        <a href="#" class="resource-link">TOGAF Implementation Blueprint</a>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fas fa-video text-primary me-3"></i>
+                                        <a href="#" class="resource-link">Webinar: EA for Digital Transformation</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial -->
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="h5 mb-4">What Clients Say</h3>
+                                <div class="testimonial">
+                                    <div class="mb-3">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                    </div>
+                                    <blockquote class="mb-3">
+                                        <p class="fst-italic mb-0">"AvonixGlobal's enterprise architecture team helped us navigate a complex digital transformation initiative. Their methodology ensured business-IT alignment throughout the journey."</p>
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <p class="small mb-0"><strong>Sarah Matthews</strong></p>
+                                        <p class="small text-muted mb-0">CIO, Global Financial Services</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </aside>
                 </div>
             </div>
-        </main>
+        </div>
+    </main>
 
-        <!-- Enhanced Footer -->
-        <footer class="bg-dark text-white py-5">
-            <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-4">
-                        <h3 class="h5 mb-3">Enterprise Insights</h3>
-                        <ul class="list-unstyled">
-                            <li class="mb-2">
-                                <a href="#frameworks" class="text-white text-decoration-none">
-                                    <i class="fas fa-chevron-right small me-2"></i>Architecture Frameworks
-                                </a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="#casestudies" class="text-white text-decoration-none">
-                                    <i class="fas fa-chevron-right small me-2"></i>Case Studies
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4">
-                        <h3 class="h5 mb-3">Contact</h3>
-                        <ul class="list-unstyled">
-                            <li class="mb-2">
-                                <i class="fas fa-phone-alt me-2"></i>+1 (555) 123-4567
-                            </li>
-                            <li class="mb-2">
-                                <i class="fas fa-envelope me-2"></i>ea@avonixglobal.com
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4">
-                        <h3 class="h5 mb-3">Connect</h3>
-                        <div class="social-links d-flex gap-3">
-                            <a href="https://linkedin.com/company" class="text-white hover-glow" 
-                               aria-label="LinkedIn Profile" target="_blank" rel="noopener">
-                                <i class="fab fa-linkedin fa-lg"></i>
+    <!-- Enhanced Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <h3 class="h5 mb-3">Enterprise Insights</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#framework-heading" class="text-white text-decoration-none">
+                                <i class="fas fa-chevron-right small me-2"></i>Architecture Frameworks
                             </a>
-                            <a href="https://twitter.com" class="text-white hover-glow" 
-                               aria-label="Twitter Profile" target="_blank" rel="noopener">
-                                <i class="fab fa-twitter fa-lg"></i>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#casestudy-heading" class="text-white text-decoration-none">
+                                <i class="fas fa-chevron-right small me-2"></i>Case Studies
                             </a>
-                        </div>
-                    </div>
+                        </li>
+                        <li class="mb-2">
+                            <a href="blog/togaf-overview.html" class="text-white text-decoration-none">
+                                <i class="fas fa-chevron-right small me-2"></i>TOGAF Explained
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="blog/ea-governance.html" class="text-white text-decoration-none">
+                                <i class="fas fa-chevron-right small me-2"></i>EA Governance Best Practices
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <hr class="my-5 opacity-25">
-                <div class="text-center small">
-                    <p class="mb-0">&copy; <span id="currentYear"></span> AvonixGlobal. All rights reserved.</p>
-                    <p class="mb-0 text-muted">TOGAF® is a registered trademark of The Open Group</p>
+                <div class="col-lg-4">
+                    <h3 class="h5 mb-3">Contact</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-phone-alt me-2"></i>+1 (555) 123-4567
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2"></i>info@avonix-global.com
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt me-2"></i>123 Enterprise Way, Suite 400<br>
+                            <span class="ms-4">Boston, MA 02110</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="h5 mb-3">Connect</h3>
+                    <div class="social-links d-flex gap-3 mb-4">
+                        <a href="https://linkedin.com/company" class="text-white hover-glow" 
+                           aria-label="LinkedIn Profile" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="https://twitter.com" class="text-white hover-glow" 
+                           aria-label="Twitter Profile" target="_blank" rel="noopener">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="https://youtube.com" class="text-white hover-glow" 
+                           aria-label="YouTube Channel" target="_blank" rel="noopener">
+                            <i class="fab fa-youtube fa-lg"></i>
+                        </a>
+                    </div>
+                    <h4 class="h6 mb-3">Subscribe to Our Newsletter</h4>
+                    <form class="newsletter-form">
+                        <div class="input-group mb-2">
+                            <input type="email" class="form-control" placeholder="Your email address" aria-label="Email address">
+                            <button class="btn btn-primary" type="submit" aria-label="Subscribe">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                        <small class="text-muted">Monthly insights on enterprise architecture trends</small>
+                    </form>
                 </div>
             </div>
-        </footer>
+            <hr class="my-5 opacity-25">
+            <div class="text-center small">
+                <p class="mb-0">&copy; <span id="currentYear">2025</span> AvonixGlobal. All rights reserved.</p>
+                <p class="mb-0 text-muted">TOGAF® is a registered trademark of The Open Group</p>
+            </div>
+        </div>
+    </footer>
 
-        <!-- Scripts -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
-                integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
-                crossorigin="anonymous"></script>
-        <script>
-            // Dynamic Year Update
-            document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-            // Smooth Scroll
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-        </script>
-    </body>
-    </html>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+            crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
     
 
