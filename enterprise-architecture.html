@@ -74,21 +74,17 @@
     </nav>
 
     <!-- Optimized Hero Section -->
-    <header class="hero-section position-relative overflow-hidden min-vh-50" aria-labelledby="main-heading">
-        <div class="hero-gradient"></div>
-        <picture>
-            <source srcset="assets/enterprise-architecture.webp 800w, 
-                            assets/enterprise-architecture.webp 1200w"
-                    sizes="(max-width: 800px) 800px, 1200px"
-                    type="image/webp">
-            <img src="assets/enterprise-architecture.jpg" 
-                 alt="Enterprise architecture framework visualization with business and technology alignment"
+    <section class="hero-section position-relative py-4" style="height: 300px;">
+        
+ 
+        <img src="assets/enterprise-architecture.jpg" 
+            alt="Enterprise architecture framework visualization with business and technology alignment"
                  class="w-100 h-100 object-fit-cover"
                  loading="eager"
                  decoding="async"
                  width="1920"
                  height="1080">
-        </picture>
+        
         <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
         <div class="container position-relative text-white d-flex flex-column justify-content-center text-center py-8">
             <h1 id="main-heading" class="display-4 mb-3 animate__animated animate__fadeInDown">Strategic Enterprise Architecture Solutions</h1>
@@ -100,7 +96,7 @@
                 <a href="#benefits-section" class="btn btn-outline-light btn-lg hover-scale">View Benefits</a>
             </div>
         </div>
-    </header>
+    </section>
 
     <!-- Main Content -->
     <main id="main-content" class="service-content py-6">
@@ -153,7 +149,7 @@
                                 
                                 <figure class="mb-5">
                                     <picture>
-                                        <source srcset="assets/ea-framework.webp" type="image/webp">
+                                    
                                         <img src="assets/ea-framework.png" 
                                              alt="Four-layer enterprise architecture framework: Business, Application, Data, Technology"
                                              class="img-fluid rounded shadow-sm"
@@ -252,99 +248,6 @@
                                     </div>
                                 </div>
                             </section>
-
-                            <!-- Case Study Section -->
-                            <section class="mb-6" aria-labelledby="casestudy-heading">
-                                <h3 id="casestudy-heading" class="h2 mb-4">Success Stories</h3>
-                                
-                                <div class="card mb-4">
-                                    <div class="card-body">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <span class="badge bg-primary me-2">Financial Services</span>
-                                            <span class="text-muted small">Global Banking Enterprise</span>
-                                        </div>
-                                        <h4 class="h5 mb-3">Digital Transformation Architecture</h4>
-                                        <p class="mb-3">Developed a comprehensive enterprise architecture to support the bank's digital transformation initiative, resulting in:</p>
-                                        <ul class="mb-3">
-                                            <li>42% reduction in application portfolio</li>
-                                            <li>$4.2M annual savings in IT operational costs</li>
-                                            <li>65% improvement in time-to-market for new digital services</li>
-                                        </ul>
-                                        <a href="case-studies.html#banking" class="btn btn-sm btn-outline-primary">
-                                            Read Full Case Study <i class="fas fa-arrow-right ms-1"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <span class="badge bg-primary me-2">Healthcare</span>
-                                            <span class="text-muted small">National Healthcare Provider</span>
-                                        </div>
-                                        <h4 class="h5 mb-3">Interoperability Architecture Framework</h4>
-                                        <p class="mb-3">Designed and implemented an enterprise architecture enabling secure interoperability between legacy systems and modern cloud platforms:</p>
-                                        <ul class="mb-3">
-                                            <li>Integration of 17 disparate clinical systems</li>
-                                            <li>Reduced data exchange latency by 78%</li>
-                                            <li>HIPAA-compliant security architecture implementation</li>
-                                        </ul>
-                                        <a href="case-studies.html#healthcare" class="btn btn-sm btn-outline-primary">
-                                            Read Full Case Study <i class="fas fa-arrow-right ms-1"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <!-- Contact Section -->
-                            <section id="contact-section" class="mb-6" aria-labelledby="contact-heading">
-                                <div class="card bg-primary-gradient text-white">
-                                    <div class="card-body p-5">
-                                        <h3 id="contact-heading" class="h2 mb-4">Ready to Transform Your Enterprise Architecture?</h3>
-                                        <p class="mb-4">Schedule a no-obligation consultation with our TOGAF-certified architects to discuss your specific needs.</p>
-                                        <form class="needs-validation" novalidate>
-                                            <div class="row g-3">
-                                                <div class="col-md-6">
-                                                    <label for="name" class="form-label">Full Name</label>
-                                                    <input type="text" class="form-control" id="name" required>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label for="company" class="form-label">Company</label>
-                                                    <input type="text" class="form-control" id="company" required>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label for="email" class="form-label">Business Email</label>
-                                                    <input type="email" class="form-control" id="email" required>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label for="phone" class="form-label">Phone</label>
-                                                    <input type="tel" class="form-control" id="phone">
-                                                </div>
-                                                <div class="col-12">
-                                                    <label for="message" class="form-label">How can we help?</label>
-                                                    <textarea class="form-control" id="message" rows="3" required></textarea>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" id="privacy-policy" required>
-                                                        <label class="form-check-label small" for="privacy-policy">
-                                                            I agree to the <a href="privacy.html" class="text-white">privacy policy</a>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 mt-4">
-                                                    <button type="submit" class="btn btn-light hover-scale">
-                                                        <i class="fas fa-paper-plane me-2"></i>Submit Request
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </section>
-                        </section>
-                    </article>
-                </div>
 
                 <!-- Enhanced Sidebar -->
                 <div class="col-lg-4">
