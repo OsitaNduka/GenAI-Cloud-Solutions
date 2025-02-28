@@ -5,75 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact AvonixGlobal Solutions - Enterprise AI & Cloud Solutions Provider">
     
-    <!-- Open Graph / Twitter Cards -->
-    <meta property="og:title" content="Contact Us | AvonixGlobal Solutions">
-    <meta property="og:description" content="Get in touch with our team for enterprise cloud and AI solutions">
-    <meta property="og:image" content="assets/og-contact.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    
     <title>Contact Us | AvonixGlobal Solutions</title>
 
-    <!-- Preload Critical Resources -->
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
-    <link rel="preload" href="styles.css" as="style">
-    
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
-          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    
-    <!-- Custom Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    
+
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
-          integrity="sha512-...">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html" aria-label="Home">
-                <img src="assets/logo.jpg" alt="AvonixGlobal Logo" width="40" height="40" 
-                     loading="lazy" decoding="async" class="rounded-circle">
-                <span class="ms-2">AvonixGlobal Solutions</span>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeToggle" class="btn btn-secondary position-fixed top-0 end-0 m-3">
+        <i class="fas fa-moon"></i>
+    </button>
+    
     <!-- Hero Section -->
     <header class="hero-section position-relative overflow-hidden min-vh-50">
-        <picture>
-            <source srcset="assets/code-brain-800.webp" media="(max-width: 800px)" type="image/webp">
-            <source srcset="assets/code-brain.webp" type="image/webp">
-            <img src="assets/code-brain.jpg" 
-                 alt="Abstract digital transformation concept"
-                 class="w-100 h-100 object-fit-cover"
-                 loading="eager"
-                 decoding="async"
-                 width="1920"
-                 height="1080">
-        </picture>
+        <img src="assets/code-brain.jpg" alt="Abstract digital transformation" class="w-100 h-100 object-fit-cover">
         <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
-        <div class="container position-relative text-white d-flex flex-column justify-content-center text-center py-8">
-            <h1 class="display-4 mb-3 animate__animated animate__fadeInDown">Get in Touch</h1>
-            <p class="lead mb-0 animate__animated animate__fadeInUp animate__delay-1s">
-                Let's Discuss Your Digital Transformation Journey
-            </p>
+        <div class="container position-relative text-white text-center py-8">
+            <h1 class="display-4 animate__animated animate__fadeInDown">Get in Touch</h1>
+            <p class="lead animate__animated animate__fadeInUp">Let's Discuss Your Digital Transformation Journey</p>
         </div>
     </header>
 
