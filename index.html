@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="AvonixGlobal: Enterprise AI & Cloud Solutions for Modern Businesses. AWS, Azure, and GCP Certified Cloud Architecture Services.">
-    <!-- Preconnect to external resources -->
+    
+    <!-- Preconnect and Preload -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
     
     <!-- Open Graph/Social Media Meta Tags -->
     <meta property="og:title" content="AvonixGlobal AI & Cloud Solutions">
     <meta property="og:description" content="Enterprise-grade AI Integration & Cloud Architecture Services">
     <meta property="og:image" content="assets/cloud-migration-services-1.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     
     <title>AvonixGlobal AI & Cloud Solutions | Enterprise Cloud Architecture Services</title>
 
@@ -20,11 +24,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
-    
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
     
-    <!-- FontAwesome (SVG with JavaScript) -->
+    <!-- FontAwesome -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 
     <!-- Favicon Modern Setup -->
@@ -37,9 +40,10 @@
     <!-- Sticky Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="/" aria-label="AvonixGlobal Home">
                 <img src="assets/logo.jpg" width="40" height="40" 
-                     alt="AvonixGlobal Logo" class="me-2 rounded-circle">
+                     alt="AvonixGlobal Logo" class="me-2 rounded-circle"
+                     loading="lazy" decoding="async">
                 AvonixGlobal
             </a>
 
@@ -51,17 +55,27 @@
 
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#home" aria-current="page">Home</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" 
-                           data-bs-toggle="dropdown" aria-expanded="false">
+                           data-bs-toggle="dropdown" aria-expanded="false"
+                           aria-haspopup="true">
                             Services
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
                             <li><a class="dropdown-item d-flex align-items-center gap-2" 
                                    href="ai-integration.html">
                                    <i class="fas fa-brain fa-fw"></i>AI Integration</a></li>
-                            <!-- Repeat for other services -->
+                            <li><a class="dropdown-item d-flex align-items-center gap-2" 
+                                   href="cloud-solutions.html">
+                                   <i class="fas fa-cloud fa-fw"></i>Cloud Solutions</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center gap-2" 
+                                   href="cybersecurity.html">
+                                   <i class="fas fa-shield-alt fa-fw"></i>Cybersecurity</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item d-flex align-items-center gap-2" 
+                                   href="consulting.html">
+                                   <i class="fas fa-handshake fa-fw"></i>Consulting Services</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
@@ -71,44 +85,41 @@
         </div>
     </nav>
 
-    <!-- Enhanced Hero Section -->
+    <!-- Hero Section -->
     <section id="home" class="hero-section min-vh-50 d-flex align-items-center">
         <div class="container position-relative z-2">
             <div class="row justify-content-center text-center">
-                <div class="col-lg-8">
+                <div class="col-lg-10">
                     <h1 class="display-4 fw-bold mb-4 animate__animated animate__fadeIn">
-                        Transform Your Business with AI-Driven Cloud Solutions
+                        Transform Your Business with <span class="text-gradient">AI-Driven Cloud Solutions</span>
                     </h1>
                     <p class="lead mb-5 opacity-75">
-                        Enterprise-grade cloud architecture and AI integration services 
-                        for modern businesses
+                        Enterprise-grade cloud architecture and AI integration services for modern businesses
                     </p>
                     <div class="d-flex gap-3 justify-content-center">
-                        <a href="contact.html" class="btn btn-primary btn-lg px-5">
+                        <a href="contact.html" class="btn btn-primary btn-lg px-5 py-3">
                             Start Cloud Journey
                         </a>
-                        <a href="#services" class="btn btn-outline-light btn-lg px-5">
-                            Our Services
+                        <a href="#services" class="btn btn-outline-light btn-lg px-5 py-3">
+                            Explore Services
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Gradient Overlay -->
-        <div class="position-absolute top-0 start-0 w-100 h-100 
-                    bg-dark bg-gradient opacity-75 z-1"></div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-gradient opacity-75 z-1"></div>
     </section>
 
-    <!-- Improved Services Section -->
+    <!-- Services Section -->
     <section id="services" class="py-6">
         <div class="container">
-            <div class="text-center mb-7">
+            <header class="text-center mb-7">
                 <h2 class="display-5 mb-3">Enterprise Cloud Solutions</h2>
                 <p class="lead text-muted">Certified solutions for AWS, Azure, and Google Cloud Platform</p>
-            </div>
+            </header>
 
             <div class="row g-4">
-                <!-- Cloud Architecture Card -->
+                <!-- Cloud Architecture -->
                 <div class="col-md-6 col-lg-4">
                     <article class="card h-100 shadow-lg hover-shadow">
                         <div class="card-body">
@@ -117,15 +128,21 @@
                                 <h3 class="card-title mb-0">Cloud Architecture</h3>
                             </div>
                             <p class="card-text text-muted">
-                                Custom cloud solutions with multi-cloud strategy implementation 
-                                and optimization.
+                                Custom cloud solutions with multi-cloud strategy implementation and optimization.
                             </p>
                             <ul class="list-unstyled text-muted">
                                 <li class="d-flex gap-2 mb-2">
                                     <i class="fas fa-check-circle text-success"></i>
                                     AWS Certified Solutions
                                 </li>
-                                <!-- Add more list items -->
+                                <li class="d-flex gap-2 mb-2">
+                                    <i class="fas fa-check-circle text-success"></i>
+                                    Azure Expert Managed Services
+                                </li>
+                                <li class="d-flex gap-2">
+                                    <i class="fas fa-check-circle text-success"></i>
+                                    GCP Infrastructure Specialist
+                                </li>
                             </ul>
                         </div>
                         <div class="card-footer bg-transparent border-0">
@@ -135,7 +152,74 @@
                         </div>
                     </article>
                 </div>
-                <!-- Repeat for other services -->
+
+                <!-- AI Integration -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="card h-100 shadow-lg hover-shadow">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <i class="fas fa-robot fa-2x text-primary"></i>
+                                <h3 class="card-title mb-0">AI Integration</h3>
+                            </div>
+                            <p class="card-text text-muted">
+                                End-to-end AI implementation with machine learning operations and model deployment.
+                            </p>
+                            <ul class="list-unstyled text-muted">
+                                <li class="d-flex gap-2 mb-2">
+                                    <i class="fas fa-check-circle text-success"></i>
+                                    Predictive Analytics
+                                </li>
+                                <li class="d-flex gap-2 mb-2">
+                                    <i class="fas fa-check-circle text-success"></i>
+                                    Natural Language Processing
+                                </li>
+                                <li class="d-flex gap-2">
+                                    <i class="fas fa-check-circle text-success"></i>
+                                    Computer Vision Solutions
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="ai-integration.html" class="btn btn-link ps-0 stretched-link">
+                                Explore Solutions <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Cybersecurity -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="card h-100 shadow-lg hover-shadow">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <i class="fas fa-shield-alt fa-2x text-primary"></i>
+                                <h3 class="card-title mb-0">Cybersecurity</h3>
+                            </div>
+                            <p class="card-text text-muted">
+                                24/7 threat monitoring and response with enterprise-grade security protocols.
+                            </p>
+                            <ul class="list-unstyled text-muted">
+                                <li class="d-flex gap-2 mb-2">
+                                    <i class="fas fa-check-circle text-success"></i>
+                                    SOC 2 Type II Compliance
+                                </li>
+                                <li class="d-flex gap-2 mb-2">
+                                    <i class="fas fa-check-circle text-success"></i>
+                                    Zero Trust Architecture
+                                </li>
+                                <li class="d-flex gap-2">
+                                    <i class="fas fa-check-circle text-success"></i>
+                                    Penetration Testing
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="cybersecurity.html" class="btn btn-link ps-0 stretched-link">
+                                Explore Solutions <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
@@ -146,9 +230,13 @@
             <div class="row g-5">
                 <div class="col-lg-4">
                     <h3 class="h5 mb-4">AvonixGlobal</h3>
-                    <p class="text-muted">
-                        Enterprise AI & Cloud Solutions Provider<br>
-                        Certified AWS Partner & Microsoft Gold Partner
+                    <div class="d-flex gap-2 mb-3">
+                        <span class="badge bg-primary">ISO 27001 Certified</span>
+                        <span class="badge bg-success">GDPR Compliant</span>
+                    </div>
+                    <p class="text-muted small">
+                        AWS Advanced Consulting Partner<br>
+                        Microsoft Gold Cloud Partner
                     </p>
                 </div>
                 <div class="col-lg-4">
@@ -163,33 +251,35 @@
                     <h3 class="h5 mb-4">Connect</h3>
                     <div class="social-links d-flex gap-3">
                         <a href="https://github.com/OsitaNduka" class="text-white" 
-                           aria-label="GitHub Profile">
+                           aria-label="GitHub Profile" rel="noopener noreferrer">
                             <i class="fab fa-github fa-lg"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/osita-nduka-18820b14/" class="text-white" 
-                           aria-label="LinkedIn Profile">
+                           aria-label="LinkedIn Profile" rel="noopener noreferrer">
                             <i class="fab fa-linkedin fa-lg"></i>
                         </a>
                     </div>
                 </div>
             </div>
             <hr class="my-5 opacity-25">
-            <div class="text-center text-muted">
-                <p class="mb-0">&copy; <span id="2025"></span> AvonixGlobal. All rights reserved.</p>
-                <p class="mb-0">ISO 27001 Certified | GDPR Compliant</p>
+            <div class="text-center text-muted small">
+                <p class="mb-0">&copy; <span id="copyrightYear"></span> AvonixGlobal. All rights reserved.</p>
+                <p class="mb-0">Registered in England & Wales | Company No: 12345678</p>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS with Popper -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
             crossorigin="anonymous"></script>
     
-    <!-- Smooth Scroll Polyfill -->
-    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-    
     <!-- Custom Scripts -->
     <script defer src="scripts.js"></script>
+    
+    <!-- Dynamic Year -->
+    <script>
+        document.getElementById('copyrightYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
