@@ -3,8 +3,10 @@
    ============================= */
    :root {
     --primary-color: #0d6efd;
+    --primary-soft: rgba(13, 110, 253, 0.1);
     --secondary-color: #6c757d;
     --bg-dark: #121212;
+    --footer-bg: #0a0a0a;
     --text-light: #f8f9fa;
     --card-bg: #1a1a1a;
     --hover-light: rgba(255, 255, 255, 0.1);
@@ -46,7 +48,7 @@ body {
    Hero Section Enhancements
    ============================= */
 .hero-section {
-    background: linear-gradient(135deg, #0d6efd 0%, #6c757d 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: #fff;
     text-align: center;
     padding: 120px 0;
@@ -74,10 +76,16 @@ body {
     animation: fadeInUp 2s ease-out;
 }
 
-/* CTA Button Hover Effect */
+/* =============================
+   Buttons and Hover Effects
+   ============================= */
+.btn {
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
 .btn:hover {
     transform: translateY(-3px);
-    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
 }
 
 /* =============================
@@ -91,7 +99,7 @@ body {
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.02);
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
 }
 
@@ -112,19 +120,28 @@ body {
    Footer Enhancements
    ============================= */
 footer {
-    background: #0a0a0a;
+    background: var(--footer-bg);
     padding: 50px 0;
     text-align: center;
 }
 
+/* Social Links */
 .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--hover-light);
     color: var(--text-light);
     font-size: 1.5rem;
-    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out, background 0.3s ease-in-out;
 }
 
 .social-links a:hover {
     color: var(--primary-color);
+    background: var(--primary-soft);
     transform: scale(1.2);
 }
 
@@ -142,36 +159,32 @@ footer {
     }
 }
 
-/* Custom Properties */
-:root {
-  --primary-color: #0d6efd;
-  --primary-soft: rgba(13, 110, 253, 0.1);
-}
-
+/* =============================
+   Utility Classes
+   ============================= */
 .hover-scale {
-  transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .hover-scale:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .icon-container {
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.75rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
 }
 
 .tech-logo {
-  width: 80px;
-  height: auto;
-  transition: opacity 0.3s ease;
+    width: 80px;
+    height: auto;
+    transition: opacity 0.3s ease, transform 0.2s ease-in-out;
 }
 
-  
 .tech-logo:hover {
     opacity: 0.8;
     transform: translateY(-2px);
