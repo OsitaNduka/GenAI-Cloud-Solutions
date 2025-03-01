@@ -157,18 +157,26 @@
                                     Our approach integrates TOGAF ADM with Agile delivery for maximum business impact
                                 </div>
                                 
-                                <figure class="mb-5">
+                                <figure class="mb-5" aria-labelledby="figcaption-framework">
                                     <picture>
+                                        <!-- Modern WebP for better compression -->
                                         <source srcset="assets/enterprise-architecture-cycle-by-TOGAF.webp" type="image/webp">
+                                        <!-- Fallback to JPEG -->
                                         <img src="assets/enterprise-architecture-cycle-by-TOGAF.jpg" 
-                                             alt="Four-layer enterprise architecture framework: Business, Application, Data, Technology"
+                                             alt="Enterprise Architecture Framework with four layers: Business, Application, Data, and Technology"
                                              class="img-fluid rounded shadow-sm"
-                                             loading="lazy"
-                                             width="800"
-                                             height="450">
+                                             loading="lazy" decoding="async"
+                                             width="800" height="450"
+                                             srcset="assets/enterprise-architecture-cycle-by-TOGAF-1600w.jpg 1600w,
+                                                     assets/enterprise-architecture-cycle-by-TOGAF-1200w.jpg 1200w,
+                                                     assets/enterprise-architecture-cycle-by-TOGAF-800w.jpg 800w"
+                                             sizes="(max-width: 1200px) 100vw, 800px">
                                     </picture>
-                                    <figcaption class="mt-2 text-muted small">TOGAF-based Enterprise Architecture Framework</figcaption>
+                                    <figcaption id="figcaption-framework" class="mt-2 text-muted small">
+                                        TOGAF-based Enterprise Architecture Framework
+                                    </figcaption>
                                 </figure>
+                                
 
                                 <!-- Interactive Framework Cards -->
                                 <div class="row g-4 framework-layers">
