@@ -114,53 +114,93 @@
                 </div>
             </div>
 
-            <!-- Contact Form -->
-            <div class="col-lg-8">
-                <div class="card border-0 shadow-sm">
-                    <div class="card-body p-4 p-lg-5">
-                        <h2 class="h3 mb-4">Send Us a Message</h2>
-                        <form id="contactForm" novalidate>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" id="name" class="form-control" placeholder="John Doe" required>
-                                        <label for="name">Full Name</label>
-                                        <div class="invalid-feedback">Please enter your name</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" id="email" class="form-control" placeholder="name@example.com" required>
-                                        <label for="email">Email Address</label>
-                                        <div class="invalid-feedback">Please enter a valid email</div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" id="subject" class="form-control" placeholder="Subject" required>
-                                        <label for="subject">Subject</label>
-                                        <div class="invalid-feedback">Please enter a subject</div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea id="message" class="form-control" style="height: 150px" placeholder="Message" required></textarea>
-                                        <label for="message">Message</label>
-                                        <div class="invalid-feedback">Please enter your message</div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary w-100">
-                                        <i class="fas fa-paper-plane me-2"></i>Send Message
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
+<!-- Contact Form -->
+<div class="col-lg-8">
+    <div class="card border-0 shadow-sm">
+        <div class="card-body p-4 p-lg-5">
+            <h2 class="h3 mb-4">Send Us a Message</h2>
+
+            <!-- Success Message (Initially Hidden) -->
+            <div id="successMessage" class="alert alert-success d-none" role="alert">
+                <i class="fas fa-check-circle me-2"></i> Your message has been sent successfully!
+            </div>
+
+            <form id="contactForm" action="https://formspree.io/f/xpwzqekj" method="POST" novalidate>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+                            <label for="name">Full Name</label>
+                            <div class="invalid-feedback">Please enter your name.</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="name@example.com" required>
+                            <label for="email">Email Address</label>
+                            <div class="invalid-feedback">Please enter a valid email.</div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+                            <label for="subject">Subject</label>
+                            <div class="invalid-feedback">Please enter a subject.</div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <textarea id="message" name="message" class="form-control" style="height: 150px" placeholder="Message" required></textarea>
+                            <label for="message">Message</label>
+                            <div class="invalid-feedback">Please enter your message.</div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="fas fa-paper-plane me-2"></i>Send Message
+                        </button>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
-    </main>
+    </div>
+</div>
+
+<!-- JavaScript for Success Message Handling -->
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const form = this;
+        const successMessage = document.getElementById("successMessage");
+
+        // Simulate form submission (using Formspree)
+        fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+            headers: { "Accept": "application/json" }
+        }).then(response => {
+            if (response.ok) {
+                successMessage.classList.remove("d-none");
+                form.reset(); // Clear form fields
+
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    successMessage.classList.add("d-none");
+                }, 5000);
+            } else {
+                alert("Something went wrong. Please try again later.");
+            }
+        }).catch(error => {
+            alert("Error: " + error.message);
+        });
+    });
+</script>
+
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-5 text-center">
