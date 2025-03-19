@@ -255,6 +255,9 @@ footer {
 .bg-pci { background-color: #6c757d; }
 .bg-iso { background-color: #f26522; }
 .bg-ccpa { background-color: #003366; }
+.bg-aws { background: #FF9900; color: white; }
+.bg-azure { background: #008AD7; color: white; }
+.bg-gcp { background: #4285F4; color: white; }
 
 .compliance-badge {
     transition: transform 0.2s ease;
