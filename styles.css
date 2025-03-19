@@ -222,3 +222,21 @@ footer {
     line-height: 40px;
     font-weight: 700;
 }
+
+/* Add to styles.css for number circles */
+.text-primary {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+/* Optional for workflow numbers */
+.workflow-step {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #0d6efd;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+}
