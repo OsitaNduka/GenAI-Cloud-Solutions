@@ -248,3 +248,18 @@ footer {
     line-height: 30px;
     text-align: center;
 }
+/* Compliance Badge Colors */
+.bg-gdpr { background-color: #2b3990; }
+.bg-hipaa { background-color: #3a7dae; }
+.bg-soc2 { background-color: #00a4a6; }
+.bg-pci { background-color: #6c757d; }
+.bg-iso { background-color: #f26522; }
+.bg-ccpa { background-color: #003366; }
+
+.compliance-badge {
+    transition: transform 0.2s ease;
+    cursor: help;
+}
+.compliance-badge:hover {
+    transform: scale(1.1);
+}
