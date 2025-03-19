@@ -2,7 +2,7 @@
    Global Styles & Dark Mode Tweaks
    ============================= */
    :root {
-    --primary-color: #0d6efd;
+    --primary-color: #8ab5f4;
     --primary-soft: rgba(13, 110, 253, 0.1);
     --secondary-color: #6c757d;
     --bg-dark: #121212;
@@ -164,10 +164,18 @@ footer {
    ============================= */
 .hover-scale {
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .hover-scale:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.process-step {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
 }
 
 .icon-container {
