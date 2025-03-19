@@ -266,3 +266,11 @@ footer {
 .compliance-badge:hover {
     transform: scale(1.1);
 }
+
+.border-dashed {
+    border: 2px dashed #dee2e6;
+    border-radius: 0.75rem;
+}
+.bg-primary-soft {
+    background-color: rgba(13, 110, 253, 0.1);
+}
