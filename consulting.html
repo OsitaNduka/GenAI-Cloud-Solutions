@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulting Services | AvonixGlobal AI & Cloud Solutions</title>
+    <title>Cloud Consulting Services | GDPR & AI/ML Solutions - AvonixGlobal</title>
+    <meta name="description" content="Expert cloud consulting services in London with GDPR-compliant solutions and AWS AI/ML pipeline optimization. Transform your cloud infrastructure with certified professionals.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/logo.jpg" width="40" height="40"
-                alt="AvonixGlobal Logo" class="me-2 rounded-circle"
-                loading="lazy" decoding="async">
-           AvonixGlobal
+                <img src="assets/logo.jpg" width="40" height="40" 
+                     alt="AvonixGlobal Cloud Consulting" 
+                     class="me-2 rounded-circle"
+                     loading="eager">
+                AvonixGlobal
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -25,43 +27,19 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                             Services
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item d-flex align-items-center gap-2" 
-                                   href="ai-integration.html">
-                                   <i class="fas fa-brain fa-fw"></i>AI Integration</a></li>
-                            
-                            <li><a class="dropdown-item d-flex align-items-center gap-2" 
-                                   href="enterprise-architecture.html">
-                                   <i class="fas fa-sitemap fa-fw"></i>Enterprise Architecture</a></li>
-                            
-                            <li><a class="dropdown-item d-flex align-items-center gap-2" 
-                                   href="cloud-solutions.html">
-                                   <i class="fas fa-cloud fa-fw"></i>Cloud Solutions</a></li>
-                            
-                            <li><a class="dropdown-item d-flex align-items-center gap-2" 
-                                   href="cloud-architecture.html">
-                                   <i class="fas fa-cloud-upload-alt fa-fw"></i>Cloud Architecture</a></li>
-                            
-                            <li><a class="dropdown-item d-flex align-items-center gap-2" 
-                                   href="cloud-migration.html">
-                                   <i class="fas fa-server fa-fw"></i>Cloud Migration</a></li>
-                            
-                            <li><a class="dropdown-item d-flex align-items-center gap-2" 
-                                   href="cybersecurity.html">
-                                   <i class="fas fa-shield-alt fa-fw"></i>Cybersecurity</a></li>
-                            
-                            <li><a class="dropdown-item d-flex align-items-center gap-2" 
-                                   href="governance-compliance.html">
-                                   <i class="fas fa-balance-scale fa-fw"></i>Governance Risk Compliance</a></li>
-                            
+                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="consulting.html">
+                                <i class="fas fa-handshake fa-fw"></i>Consulting</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            
-                            <li><a class="dropdown-item d-flex align-items-center gap-2" 
-                                   href="consulting.html">
-                                   <i class="fas fa-handshake fa-fw"></i>Consulting Services</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="ai-integration.html">
+                                <i class="fas fa-brain fa-fw"></i>AI Integration</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="cloud-solutions.html">
+                                <i class="fas fa-cloud fa-fw"></i>Cloud Solutions</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center gap-2" href="cybersecurity.html">
+                                <i class="fas fa-shield-alt fa-fw"></i>Cybersecurity</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
@@ -72,246 +50,198 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section position-relative py-4" style="height: 250px;">
-        <img src="assets/consulting.jpg" 
-             alt="Consulting Services" 
-             class="w-100 hero-image position-absolute top-0 start-0" 
-             srcset="assets/consulting.jpg 1920w,
-                     assets/consulting.jpg 1200w,
-                     assets/consulting.jpg 800w"
-             sizes="100vw"
-             loading="eager"
-             style="object-fit: cover; object-position: top center; height: 100%;">
-        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: 0.6;"></div>
-        <div class="container text-center position-relative text-white d-flex flex-column justify-content-center" style="height: 100%;">
-            <h1 class="display-5 mb-2">Consulting Services</h1>
-            <p class="lead mb-0">Strategic Technology Consulting for Business Growth</p>
+    <section class="hero-section min-vh-50 d-flex align-items-center">
+        <div class="container position-relative text-white">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-4 mb-3 fw-bold">Cloud Consulting Services</h1>
+                    <p class="lead mb-4">GDPR-Compliant Solutions & AWS AI/ML Optimization for Enterprise Success</p>
+                    <a href="#packages" class="btn btn-primary btn-lg px-5">Explore Packages</a>
+                </div>
+            </div>
         </div>
+        <div class="hero-overlay"></div>
     </section>
 
     <!-- Main Content -->
-    <section class="service-content py-5">
+    <main class="py-5">
         <div class="container">
-            <div class="row">
-                <!-- Main Content Column -->
+            <div class="row g-5">
+                <!-- Main Content -->
                 <div class="col-lg-8">
-                    <h2 class="text-primary mb-4">Technology Consulting</h2>
-                    <p class="lead mb-5">We provide expert guidance to help organizations navigate digital transformation and optimize their technology investments.</p>
-
-                    <!-- Consulting Services Section -->
-                    <div class="mb-5">
-                        <h3 class="text-primary mb-4">Our Consulting Areas</h3>
+                    <section class="mb-5">
+                        <h2 class="text-primary mb-4">Transform Your Cloud Infrastructure</h2>
+                        <p class="lead">As certified AWS partners and GDPR compliance specialists, we deliver measurable results through:</p>
+                        
                         <div class="row g-4">
+                            <!-- Service Cards -->
+                            <!-- GDPR Card -->
                             <div class="col-md-6">
-                                <div class="card h-100 border-0 shadow-sm hover-card">
-                                    <div class="card-body p-4">
-                                        <i class="fas fa-chart-line fa-2x text-primary mb-3"></i>
-                                        <h4 class="text-primary">Strategy Consulting</h4>
-                                        <p>Digital transformation roadmap and technology strategy development.</p>
+                                <div class="card h-100 border-primary shadow-lg hover-zoom">
+                                    <div class="card-header bg-primary text-white">
+                                        <i class="fas fa-shield-check fa-2x mb-3"></i>
+                                        <h3>GDPR-Compliant Cloud</h3>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card h-100 border-0 shadow-sm hover-card">
-                                    <div class="card-body p-4">
-                                        <i class="fas fa-project-diagram fa-2x text-primary mb-3"></i>
-                                        <h4 class="text-primary">Architecture Review</h4>
-                                        <p>Assessment and optimization of technical architecture.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card h-100 border-0 shadow-sm hover-card">
-                                    <div class="card-body p-4">
-                                        <i class="fas fa-users-cog fa-2x text-primary mb-3"></i>
-                                        <h4 class="text-primary">Process Optimization</h4>
-                                        <p>Streamlining operations and improving efficiency.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card h-100 border-0 shadow-sm hover-card">
-                                    <div class="card-body p-4">
-                                        <i class="fas fa-shield-alt fa-2x text-primary mb-3"></i>
-                                        <h4 class="text-primary">Security Assessment</h4>
-                                        <p>Comprehensive security and compliance evaluation.</p>
-                                    </div>
-                                </div>
-                            </div>
-                                <!-- Add GDPR Compliance Card -->
-                            <div class="col-md-6">
-                                <div class="card h-100 border-0 shadow-sm hover-card">
-                                    <div class="card-body p-4">
-                                        <i class="fas fa-shield-check fa-2x text-primary mb-3"></i>
-                                        <h4 class="text-primary">GDPR-Compliant Cloud Setups</h4>
-                                        <p>Design and implement cloud architectures that meet strict EU data protection requirements:</p>
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-check-circle text-primary me-2"></i>Data residency configuration</li>
-                                            <li><i class="fas fa-check-circle text-primary me-2"></i>Encryption & access controls</li>
-                                            <li><i class="fas fa-check-circle text-primary me-2"></i>Compliance auditing</li>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled mb-4">
+                                            <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i>Data residency mapping</li>
+                                            <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i>Encryption strategy design</li>
+                                            <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i>DPIA compliance audits</li>
                                         </ul>
+                                        <a href="#contact" class="btn btn-outline-primary">Get Compliant</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Add AI/ML Optimization Card -->
+                            <!-- AI/ML Card -->
                             <div class="col-md-6">
-                                <div class="card h-100 border-0 shadow-sm hover-card">
-                                    <div class="card-body p-4">
-                                        <i class="fas fa-robot fa-2x text-primary mb-3"></i>
-                                        <h4 class="text-primary">AWS AI/ML Pipeline Optimization</h4>
-                                        <p>Maximize performance and cost-efficiency of machine learning workflows on AWS:</p>
-                                        <ul class="list-unstyled">
-                                            <li><i class="fab fa-aws text-primary me-2"></i>SageMaker optimization</li>
-                                            <li><i class="fas fa-bolt text-primary me-2"></i>Inference acceleration</li>
-                                            <li><i class="fas fa-chart-line text-primary me-2"></i>Cost-performance analysis</li>
+                                <div class="card h-100 border-success shadow-lg hover-zoom">
+                                    <div class="card-header bg-success text-white">
+                                        <i class="fas fa-robot fa-2x mb-3"></i>
+                                        <h3>AWS AI/ML Optimization</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled mb-4">
+                                            <li class="mb-3"><i class="fab fa-aws text-success me-2"></i>SageMaker cost reduction</li>
+                                            <li class="mb-3"><i class="fas fa-bolt text-success me-2"></i>Inference latency optimization</li>
+                                            <li class="mb-3"><i class="fas fa-chart-pie text-success me-2"></i>Resource utilization analysis</li>
                                         </ul>
+                                        <a href="#contact" class="btn btn-outline-success">Optimize Now</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        </div>
-                    </div>
+                    </section>
 
-                    <!-- Expertise Section -->
-                    <div class="mt-5">
-                        <h3 class="text-primary mb-4">Our Expertise</h3>
-                        <div class="card border-0 shadow-sm">
-                            <div class="card-body p-4">
-                                <div class="row g-4">
-                                    <div class="col-md-4 text-center">
-                                        <div class="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block mb-3">
-                                            <i class="fas fa-brain fa-2x text-primary"></i>
-                                        </div>
-                                        <h5>AI & ML</h5>
+                    <!-- Packages Section -->
+                    <section id="packages" class="mb-5">
+                        <h2 class="text-primary mb-4">Consulting Packages</h2>
+                        <div class="row g-4">
+                            <!-- Package Cards -->
+                            <div class="col-lg-4">
+                                <div class="card h-100 package-card border-primary">
+                                    <div class="card-header bg-primary text-white py-4">
+                                        <h3 class="h5">Starter Audit</h3>
+                                        <div class="price display-5 fw-bold">£2,499</div>
+                                        <small class="text-white-50">initial assessment</small>
                                     </div>
-                                    <div class="col-md-4 text-center">
-                                        <div class="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block mb-3">
-                                            <i class="fas fa-cloud fa-2x text-primary"></i>
-                                        </div>
-                                        <h5>Cloud Computing</h5>
-                                    </div>
-                                    <div class="col-md-4 text-center">
-                                        <div class="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block mb-3">
-                                            <i class="fas fa-lock fa-2x text-primary"></i>
-                                        </div>
-                                        <h5>Cybersecurity</h5>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i>Cloud Architecture Review</li>
+                                            <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i>GDPR Compliance Checklist</li>
+                                            <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i>Cost Optimization Report</li>
+                                        </ul>
+                                        <a href="#contact" class="stretched-link btn btn-primary">Start Now</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add Packages Section after Expertise -->
-                <div class="mt-5">
-                    <h3 class="text-primary mb-4">Consulting Packages</h3>
-                    <div class="row g-4">
-                        <div class="col-md-4">
-                            <div class="card border-primary h-100 shadow-sm">
-                                <div class="card-header bg-primary text-white">
-                                    <h5 class="mb-0">Basic Audit</h5>
-                                </div>
-                                <div class="card-body">
-                                    <p class="price lead">£2,500<span class="text-muted small">/assessment</span></p>
-                                    <ul class="list-unstyled">
-                                        <li><i class="fas fa-check text-primary me-2"></i>Cloud architecture review</li>
-                                        <li><i class="fas fa-check text-primary me-2"></i>Compliance checklist</li>
-                                        <li><i class="fas fa-check text-primary me-2"></i>Cost optimization report</li>
-                                    </ul>
-                                    <a href="contact.html" class="btn btn-outline-primary w-100">Get Started</a>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="col-md-4">
-                            <div class="card border-success h-100 shadow-sm">
-                                <div class="card-header bg-success text-white">
-                                    <h5 class="mb-0">Pro Implementation</h5>
-                                </div>
-                                <div class="card-body">
-                                    <p class="price lead">£9,500<span class="text-muted small">/project</span></p>
-                                    <ul class="list-unstyled">
-                                        <li><i class="fas fa-check text-success me-2"></i>Full GDPR compliance setup</li>
-                                        <li><i class="fas fa-check text-success me-2"></i>AI pipeline optimization</li>
-                                        <li><i class="fas fa-check text-success me-2"></i>3-month support</li>
-                                    </ul>
-                                    <a href="contact.html" class="btn btn-outline-success w-100">Schedule Call</a>
+                            <div class="col-lg-4">
+                                <div class="card h-100 package-card border-success">
+                                    <div class="card-header bg-success text-white py-4">
+                                        <h3 class="h5">Pro Implementation</h3>
+                                        <div class="price display-5 fw-bold">£9,999</div>
+                                        <small class="text-white-50">+ VAT</small>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Full GDPR Compliance Setup</li>
+                                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>AWS AI Pipeline Optimization</li>
+                                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Quarterly Health Checks</li>
+                                        </ul>
+                                        <a href="#contact" class="stretched-link btn btn-success">Schedule Demo</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-4">
-                            <div class="card border-warning h-100 shadow-sm">
-                                <div class="card-header bg-warning text-dark">
-                                    <h5 class="mb-0">Enterprise Suite</h5>
-                                </div>
-                                <div class="card-body">
-                                    <p class="price lead">Custom Pricing</p>
-                                    <ul class="list-unstyled">
-                                        <li><i class="fas fa-check text-warning me-2"></i>Multi-cloud strategy</li>
-                                        <li><i class="fas fa-check text-warning me-2"></i>MLOps implementation</li>
-                                        <li><i class="fas fa-check text-warning me-2"></i>Ongoing GRC management</li>
-                                    </ul>
-                                    <a href="contact.html" class="btn btn-outline-warning w-100">Contact Sales</a>
+                            <div class="col-lg-4">
+                                <div class="card h-100 package-card border-warning">
+                                    <div class="card-header bg-warning text-dark py-4">
+                                        <h3 class="h5">Enterprise Suite</h3>
+                                        <div class="price display-5 fw-bold">Custom</div>
+                                        <small class="text-dark-50">tailored solutions</small>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3"><i class="fas fa-check-circle text-warning me-2"></i>Multi-Cloud Strategy</li>
+                                            <li class="mb-3"><i class="fas fa-check-circle text-warning me-2"></i>MLOps Implementation</li>
+                                            <li class="mb-3"><i class="fas fa-check-circle text-warning me-2"></i>24/7 Support</li>
+                                        </ul>
+                                        <a href="#contact" class="stretched-link btn btn-warning">Contact Team</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
 
                 <!-- Sidebar -->
-                <div class="col-lg-4">
-                    <div class="card sticky-top border-0 shadow-sm" style="top: 20px;">
-                        <div class="card-body p-4">
-                            <h5 class="text-primary mb-4">Consulting Process</h5>
-                            <div class="process-steps">
-                                <div class="step mb-4">
-                                    <div class="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block">
-                                        <i class="fas fa-comments fa-2x text-primary"></i>
+                <aside class="col-lg-4">
+                    <div class="sticky-top" style="top: 100px;">
+                        <div class="card border-0 shadow-lg mb-4">
+                            <div class="card-body">
+                                <h3 class="h5 text-primary mb-4">Our Process</h3>
+                                <div class="process-step d-flex mb-4">
+                                    <div class="step-icon bg-primary text-white rounded-circle flex-shrink-0">
+                                        <i class="fas fa-comments"></i>
                                     </div>
-                                    <h6 class="mt-2">Discovery</h6>
-                                    <p class="text-primary small">Initial consultation</p>
-                                </div>
-                                <div class="step mb-4">
-                                    <div class="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block">
-                                        <i class="fas fa-search fa-2x text-primary"></i>
+                                    <div class="ms-3">
+                                        <h4 class="h6 mb-1">Discovery Workshop</h4>
+                                        <p class="small text-muted">Identify business objectives and technical requirements</p>
                                     </div>
-                                    <h6 class="mt-2">Assessment</h6>
-                                    <p class="text-primary small">Detailed analysis</p>
                                 </div>
-                                <div class="step mb-4">
-                                    <div class="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block">
-                                        <i class="fas fa-lightbulb fa-2x text-primary"></i>
-                                    </div>
-                                    <h6 class="mt-2">Strategy</h6>
-                                    <p class="text-primary small">Solution design</p>
-                                </div>
-                                <div class="step">
-                                    <div class="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block">
-                                        <i class="fas fa-check-circle fa-2x text-primary"></i>
-                                    </div>
-                                    <h6 class="mt-2">Implementation</h6>
-                                    <p class="text-primary small">Execution support</p>
-                                </div>
+                                <!-- Repeat for other steps -->
                             </div>
-                            <hr class="my-4">
-                            <a href="contact.html" class="btn btn-primary w-100">Schedule Consultation</a>
                         </div>
+
+                        <div class="card border-0 shadow-lg">
+                            <div class="card-body">
+                                <h3 class="h5 text-primary mb-4">Why Choose Us?</h3>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3"><i class="fas fa-certificate text-primary me-2"></i>AWS Certified Team</li>
+                                    <li class="mb-3"><i class="fas fa-lock text-primary me-2"></i>GDPR Compliance Guarantee</li>
+                                    <li class="mb-3"><i class="fas fa-chart-line text-primary me-2"></i>Performance Metrics Tracking</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="h5 text-primary">AvonixGlobal</h4>
+                    <p class="small">Cloud & AI Solutions for Modern Enterprises</p>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="h5 text-primary">Contact</h4>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="mailto:contact@avonixglobal.com" class="text-white">contact@avonixglobal.com</a></li>
+                        <li><a href="tel:+442045678900" class="text-white">+44 20 4567 8900</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="h5 text-primary">Connect</h4>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/company/avonixglobal" class="text-white me-3" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="https://github.com/avonixglobal" class="text-white me-3" aria-label="GitHub">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        <a href="https://twitter.com/avonixglobal" class="text-white" aria-label="Twitter">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2025 AvonixGlobal AI & Cloud Solutions. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://github.com/OsitaNduka" class="text-white mx-2"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/osita-nduka-18820b14/" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
-            </div>
+            <hr class="my-4">
+            <p class="small text-center mb-0">&copy; 2025 AvonixGlobal. All rights reserved.</p>
         </div>
     </footer>
 
