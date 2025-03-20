@@ -274,10 +274,6 @@ footer {
 .bg-primary-soft {
     background-color: rgba(13, 110, 253, 0.1);
 }
-
-.hero-section {
-    background: linear-gradient(rgba(0,0,0,0.7), url('assets/consulting.jpg') center/cover;
-  }
   
 .hover-zoom {
     transition: transform 0.3s ease;
