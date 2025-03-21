@@ -315,3 +315,7 @@ footer {
     align-items: center;
     justify-content: center;
   }
+
+.badge-group { gap: 0.5rem; }
+.bg-sabsa { background-color: #2a5d84; color: white; }
+.bg-nist { background-color: #4b7a47; color: white; }
