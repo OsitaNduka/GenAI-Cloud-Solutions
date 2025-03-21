@@ -208,12 +208,7 @@ footer {
     text-align: center;
     width: 150px;
 }
-.tech-logo {
-    max-width: 80px;
-    height: auto;
-    filter: grayscale(1);
-    transition: filter 0.3s ease;
-}
+
 .tech-item:hover .tech-logo {
     filter: grayscale(0);
 }
