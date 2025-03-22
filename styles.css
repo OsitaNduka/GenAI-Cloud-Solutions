@@ -319,3 +319,20 @@ footer {
 .badge-group { gap: 0.5rem; }
 .bg-sabsa { background-color: #2a5d84; color: white; }
 .bg-nist { background-color: #4b7a47; color: white; }
+
+.text-gradient {
+    background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rounded-pill {
+    border-radius: 50rem;
+}
+
+@media (max-width: 768px) {
+    header .display-4 {
+        font-size: 2.5rem;
+    }
+}
