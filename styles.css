@@ -319,3 +319,11 @@ footer {
 .badge-group { gap: 0.5rem; }
 .bg-sabsa { background-color: #2a5d84; color: white; }
 .bg-nist { background-color: #4b7a47; color: white; }
+.metric-display {
+    border: 2px solid #e9ecef;
+    border-radius: 0.5rem;
+}
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+}
