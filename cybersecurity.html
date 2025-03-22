@@ -357,113 +357,121 @@
                 </section>
 
 
-            <!-- Assessment Sidebar -->
-            <aside class="col-lg-4">
-                <div class="card border-0 shadow-lg sticky-top" style="top: 20px;">
-                    <div class="card-body p-4">
-                        <h3 class="text-primary mb-4">Security Maturity Journey</h3>
-                        <div class="timeline">
-                            <div class="timeline-step active">
-                                <div class="timeline-icon bg-primary">
-                                    <i class="fas fa-search text-white"></i>
+                <!-- Assessment Sidebar -->
+                <aside class="col-lg-4">
+                    <div class="card border-0 shadow-lg sticky-top" style="top: 20px;">
+                        <div class="card-body p-4">
+                            <h3 class="text-primary mb-4">Security Maturity Journey</h3>
+                            
+                            <!-- Phase Cards -->
+                            <div class="d-flex flex-column gap-4">
+                                <!-- Discovery Phase -->
+                                <div class="phase-card active">
+                                    <div class="card-header bg-primary-soft border-0 d-flex align-items-center gap-3">
+                                        <div class="phase-icon bg-primary text-white">
+                                            <i class="fas fa-search"></i>
+                                        </div>
+                                        <h4 class="mb-0">Discovery Phase</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="text-muted mb-3">Comprehensive infrastructure analysis and baseline establishment</p>
+                                        <ul class="phase-list">
+                                            <li>Full asset inventory and classification</li>
+                                            <li>Threat landscape modeling</li>
+                                            <li>Security control gap analysis</li>
+                                            <li>Regulatory compliance assessment</li>
+                                            <li>Stakeholder interviews</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="timeline-content">
-                                    <h4>Discovery Phase</h4>
-                                    <div class="timeline-desc">
-                                        <p>Comprehensive infrastructure analysis and baseline establishment</p>
-                                        <ul class="list-unstyled">
-                                            <li>• Full asset inventory and classification</li>
-                                            <li>• Threat landscape modeling</li>
-                                            <li>• Security control gap analysis</li>
-                                            <li>• Regulatory compliance assessment</li>
-                                            <li>• Stakeholder interviews</li>
+
+                                <!-- Strategic Planning -->
+                                <div class="phase-card">
+                                    <div class="card-header bg-warning-soft border-0 d-flex align-items-center gap-3">
+                                        <div class="phase-icon bg-warning text-white">
+                                            <i class="fas fa-project-diagram"></i>
+                                        </div>
+                                        <h4 class="mb-0">Strategic Planning</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="text-muted mb-3">Architecture design and roadmap development</p>
+                                        <ul class="phase-list">
+                                            <li>Risk-prioritized security architecture</li>
+                                            <li>Framework alignment (NIST/SABSA/ISO)</li>
+                                            <li>3-year security roadmap creation</li>
+                                            <li>Budget allocation strategy</li>
+                                            <li>Stakeholder approval process</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Implementation Phase -->
+                                <div class="phase-card">
+                                    <div class="card-header bg-success-soft border-0 d-flex align-items-center gap-3">
+                                        <div class="phase-icon bg-success text-white">
+                                            <i class="fas fa-shield-alt"></i>
+                                        </div>
+                                        <h4 class="mb-0">Implementation</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="text-muted mb-3">Phased security control deployment</p>
+                                        <ul class="phase-list">
+                                            <li>Preventive control implementation</li>
+                                            <li>Detective control configuration</li>
+                                            <li>Security policy enforcement</li>
+                                            <li>Staff training programs</li>
+                                            <li>Third-party integration</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Validation & Monitoring -->
+                                <div class="phase-card">
+                                    <div class="card-header bg-info-soft border-0 d-flex align-items-center gap-3">
+                                        <div class="phase-icon bg-info text-white">
+                                            <i class="fas fa-chart-line"></i>
+                                        </div>
+                                        <h4 class="mb-0">Validation & Monitoring</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="text-muted mb-3">Continuous security assurance</p>
+                                        <ul class="phase-list">
+                                            <li>Penetration testing</li>
+                                            <li>Compliance auditing</li>
+                                            <li>Risk reassessment</li>
+                                            <li>Security metrics reporting</li>
+                                            <li>Threat intelligence integration</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Optimization Phase -->
+                                <div class="phase-card">
+                                    <div class="card-header bg-danger-soft border-0 d-flex align-items-center gap-3">
+                                        <div class="phase-icon bg-danger text-white">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </div>
+                                        <h4 class="mb-0">Optimization</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="text-muted mb-3">Continuous improvement cycle</p>
+                                        <ul class="phase-list">
+                                            <li>Control effectiveness analysis</li>
+                                            <li>Security program refinement</li>
+                                            <li>Emerging threat adaptation</li>
+                                            <li>Technology stack updates</li>
+                                            <li>Certification maintenance</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                        
-                            <div class="timeline-step">
-                                <div class="timeline-icon bg-warning">
-                                    <i class="fas fa-project-diagram text-white"></i>
-                                </div>
-                                <div class="timeline-content">
-                                    <h4>Strategic Planning Phase</h4>
-                                    <div class="timeline-desc">
-                                        <p>Architecture design and roadmap development</p>
-                                        <ul class="list-unstyled">
-                                            <li>• Risk-prioritized security architecture</li>
-                                            <li>• Framework alignment (NIST/SABSA/ISO)</li>
-                                            <li>• 3-year security roadmap creation</li>
-                                            <li>• Budget allocation strategy</li>
-                                            <li>• Stakeholder approval process</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <div class="timeline-step">
-                                <div class="timeline-icon bg-success">
-                                    <i class="fas fa-shield-alt text-white"></i>
-                                </div>
-                                <div class="timeline-content">
-                                    <h4>Implementation Phase</h4>
-                                    <div class="timeline-desc">
-                                        <p>Phased security control deployment</p>
-                                        <ul class="list-unstyled">
-                                            <li>• Preventive control implementation</li>
-                                            <li>• Detective control configuration</li>
-                                            <li>• Security policy enforcement</li>
-                                            <li>• Staff training programs</li>
-                                            <li>• Third-party integration</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <div class="timeline-step">
-                                <div class="timeline-icon bg-info">
-                                    <i class="fas fa-chart-line text-white"></i>
-                                </div>
-                                <div class="timeline-content">
-                                    <h4>Validation & Monitoring</h4>
-                                    <div class="timeline-desc">
-                                        <p>Continuous security assurance</p>
-                                        <ul class="list-unstyled">
-                                            <li>• Penetration testing</li>
-                                            <li>• Compliance auditing</li>
-                                            <li>• Risk reassessment</li>
-                                            <li>• Security metrics reporting</li>
-                                            <li>• Threat intelligence integration</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <div class="timeline-step">
-                                <div class="timeline-icon bg-danger">
-                                    <i class="fas fa-sync-alt text-white"></i>
-                                </div>
-                                <div class="timeline-content">
-                                    <h4>Optimization Phase</h4>
-                                    <div class="timeline-desc">
-                                        <p>Continuous improvement cycle</p>
-                                        <ul class="list-unstyled">
-                                            <li>• Control effectiveness analysis</li>
-                                            <li>• Security program refinement</li>
-                                            <li>• Emerging threat adaptation</li>
-                                            <li>• Technology stack updates</li>
-                                            <li>• Certification maintenance</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+
+                            <a href="contact.html" class="btn btn-primary w-100 mt-4">
+                                <i class="fas fa-play-circle me-2"></i>Start Assessment
+                            </a>
                         </div>
-                        <a href="contact.html" class="btn btn-primary w-100 mt-3">
-                            <i class="fas fa-play-circle me-2"></i>Start Assessment
-                        </a>
                     </div>
-                </div>
-            </aside>
+                </aside>
         </div>
     </div>
 </section>
