@@ -358,120 +358,105 @@
 
 
                 <!-- Assessment Sidebar -->
-                <aside class="col-lg-4">
+                <aside class="col-lg-12">
                     <div class="card border-0 shadow-lg sticky-top" style="top: 20px;">
                         <div class="card-body p-4">
-                            <h3 class="text-primary mb-4">Security Maturity Journey</h3>
+                            <h3 class="text-primary mb-4 text-center">Security Maturity Journey</h3>
                             
-                            <!-- Phase Cards -->
-                            <div class="d-flex flex-column gap-4">
+                            <div class="d-flex flex-wrap gap-3 justify-content-center">
                                 <!-- Discovery Phase -->
-                                <div class="phase-card active">
-                                    <div class="card-header bg-primary-soft border-0 d-flex align-items-center gap-3">
-                                        <div class="phase-icon bg-primary text-white">
-                                            <i class="fas fa-search"></i>
-                                        </div>
-                                        <h4 class="mb-0">Discovery Phase</h4>
+                                <div class="card border-primary flex-grow-1" style="min-width: 250px;">
+                                    <div class="card-header bg-primary text-white">
+                                        <i class="fas fa-search me-2"></i> Discovery Phase
                                     </div>
                                     <div class="card-body">
-                                        <p class="text-muted mb-3">Comprehensive infrastructure analysis and baseline establishment</p>
-                                        <ul class="phase-list">
-                                            <li>Full asset inventory and classification</li>
-                                            <li>Threat landscape modeling</li>
-                                            <li>Security control gap analysis</li>
-                                            <li>Regulatory compliance assessment</li>
-                                            <li>Stakeholder interviews</li>
+                                        <p>Comprehensive infrastructure analysis and baseline establishment</p>
+                                        <ul class="list-unstyled">
+                                            <li>• Full asset inventory and classification</li>
+                                            <li>• Threat landscape modeling</li>
+                                            <li>• Security control gap analysis</li>
+                                            <li>• Regulatory compliance assessment</li>
+                                            <li>• Stakeholder interviews</li>
                                         </ul>
                                     </div>
                                 </div>
-
-                                <!-- Strategic Planning -->
-                                <div class="phase-card">
-                                    <div class="card-header bg-warning-soft border-0 d-flex align-items-center gap-3">
-                                        <div class="phase-icon bg-warning text-white">
-                                            <i class="fas fa-project-diagram"></i>
-                                        </div>
-                                        <h4 class="mb-0">Strategic Planning</h4>
+                                
+                                <!-- Strategic Planning Phase -->
+                                <div class="card border-warning flex-grow-1" style="min-width: 250px;">
+                                    <div class="card-header bg-warning text-white">
+                                        <i class="fas fa-project-diagram me-2"></i> Strategic Planning Phase
                                     </div>
                                     <div class="card-body">
-                                        <p class="text-muted mb-3">Architecture design and roadmap development</p>
-                                        <ul class="phase-list">
-                                            <li>Risk-prioritized security architecture</li>
-                                            <li>Framework alignment (NIST/SABSA/ISO)</li>
-                                            <li>3-year security roadmap creation</li>
-                                            <li>Budget allocation strategy</li>
-                                            <li>Stakeholder approval process</li>
+                                        <p>Architecture design and roadmap development</p>
+                                        <ul class="list-unstyled">
+                                            <li>• Risk-prioritized security architecture</li>
+                                            <li>• Framework alignment (NIST/SABSA/ISO)</li>
+                                            <li>• 3-year security roadmap creation</li>
+                                            <li>• Budget allocation strategy</li>
+                                            <li>• Stakeholder approval process</li>
                                         </ul>
                                     </div>
                                 </div>
-
+                                
                                 <!-- Implementation Phase -->
-                                <div class="phase-card">
-                                    <div class="card-header bg-success-soft border-0 d-flex align-items-center gap-3">
-                                        <div class="phase-icon bg-success text-white">
-                                            <i class="fas fa-shield-alt"></i>
-                                        </div>
-                                        <h4 class="mb-0">Implementation</h4>
+                                <div class="card border-success flex-grow-1" style="min-width: 250px;">
+                                    <div class="card-header bg-success text-white">
+                                        <i class="fas fa-shield-alt me-2"></i> Implementation Phase
                                     </div>
                                     <div class="card-body">
-                                        <p class="text-muted mb-3">Phased security control deployment</p>
-                                        <ul class="phase-list">
-                                            <li>Preventive control implementation</li>
-                                            <li>Detective control configuration</li>
-                                            <li>Security policy enforcement</li>
-                                            <li>Staff training programs</li>
-                                            <li>Third-party integration</li>
+                                        <p>Phased security control deployment</p>
+                                        <ul class="list-unstyled">
+                                            <li>• Preventive control implementation</li>
+                                            <li>• Detective control configuration</li>
+                                            <li>• Security policy enforcement</li>
+                                            <li>• Staff training programs</li>
+                                            <li>• Third-party integration</li>
                                         </ul>
                                     </div>
                                 </div>
-
+                                
                                 <!-- Validation & Monitoring -->
-                                <div class="phase-card">
-                                    <div class="card-header bg-info-soft border-0 d-flex align-items-center gap-3">
-                                        <div class="phase-icon bg-info text-white">
-                                            <i class="fas fa-chart-line"></i>
-                                        </div>
-                                        <h4 class="mb-0">Validation & Monitoring</h4>
+                                <div class="card border-info flex-grow-1" style="min-width: 250px;">
+                                    <div class="card-header bg-info text-white">
+                                        <i class="fas fa-chart-line me-2"></i> Validation & Monitoring
                                     </div>
                                     <div class="card-body">
-                                        <p class="text-muted mb-3">Continuous security assurance</p>
-                                        <ul class="phase-list">
-                                            <li>Penetration testing</li>
-                                            <li>Compliance auditing</li>
-                                            <li>Risk reassessment</li>
-                                            <li>Security metrics reporting</li>
-                                            <li>Threat intelligence integration</li>
+                                        <p>Continuous security assurance</p>
+                                        <ul class="list-unstyled">
+                                            <li>• Penetration testing</li>
+                                            <li>• Compliance auditing</li>
+                                            <li>• Risk reassessment</li>
+                                            <li>• Security metrics reporting</li>
+                                            <li>• Threat intelligence integration</li>
                                         </ul>
                                     </div>
                                 </div>
-
+                                
                                 <!-- Optimization Phase -->
-                                <div class="phase-card">
-                                    <div class="card-header bg-danger-soft border-0 d-flex align-items-center gap-3">
-                                        <div class="phase-icon bg-danger text-white">
-                                            <i class="fas fa-sync-alt"></i>
-                                        </div>
-                                        <h4 class="mb-0">Optimization</h4>
+                                <div class="card border-danger flex-grow-1" style="min-width: 250px;">
+                                    <div class="card-header bg-danger text-white">
+                                        <i class="fas fa-sync-alt me-2"></i> Optimization Phase
                                     </div>
                                     <div class="card-body">
-                                        <p class="text-muted mb-3">Continuous improvement cycle</p>
-                                        <ul class="phase-list">
-                                            <li>Control effectiveness analysis</li>
-                                            <li>Security program refinement</li>
-                                            <li>Emerging threat adaptation</li>
-                                            <li>Technology stack updates</li>
-                                            <li>Certification maintenance</li>
+                                        <p>Continuous improvement cycle</p>
+                                        <ul class="list-unstyled">
+                                            <li>• Control effectiveness analysis</li>
+                                            <li>• Security program refinement</li>
+                                            <li>• Emerging threat adaptation</li>
+                                            <li>• Technology stack updates</li>
+                                            <li>• Certification maintenance</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-
-                            <a href="contact.html" class="btn btn-primary w-100 mt-4">
-                                <i class="fas fa-play-circle me-2"></i>Start Assessment
+                            
+                            <a href="contact.html" class="btn btn-primary w-100 mt-3">
+                                <i class="fas fa-play-circle me-2"></i> Start Assessment
                             </a>
                         </div>
                     </div>
                 </aside>
+
         </div>
     </div>
 </section>
