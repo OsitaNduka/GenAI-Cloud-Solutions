@@ -184,4 +184,110 @@ document.addEventListener('DOMContentLoaded', () => {
         const scrolled = (winScroll / height) * 100;
         document.querySelector('.progress-bar').style.width = scrolled + '%';
     });
+
+    /* =============================
+       Dynamic Year Update
+       ============================= */
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    /* =============================
+       Smooth Scroll with Progress
+       ============================= */
+    // Initialize tooltips
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+    // Reading progress bar
+    const progressBar = document.querySelector('.progress-bar');
+    const updateProgress = () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        progressBar.style.width = scrolled + '%';
+        progressBar.setAttribute('aria-valuenow', scrolled);
+    };
+
+    // Debounced scroll handler
+    let scrollTimeout;
+    window.addEventListener('scroll', () => {
+        if (scrollTimeout) {
+            window.cancelAnimationFrame(scrollTimeout);
+        }
+        scrollTimeout = window.requestAnimationFrame(updateProgress);
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Intersection Observer for fade-in animations
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate__animated', 'animate__fadeIn');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Observe elements with fade-in class
+    document.querySelectorAll('.fade-in').forEach(element => {
+        observer.observe(element);
+    });
+
+    // Layer card hover effects
+    document.querySelectorAll('.layer-card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.querySelector('.card-footer').classList.remove('d-none');
+        });
+        card.addEventListener('mouseleave', () => {
+            card.querySelector('.card-footer').classList.add('d-none');
+        });
+    });
+
+    // Page loader
+    window.addEventListener('load', () => {
+        const loader = document.querySelector('.page-loader');
+        loader.classList.add('fade-out');
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 500);
+    });
+
+    // Scroll to top button
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+    if (scrollToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
 });
