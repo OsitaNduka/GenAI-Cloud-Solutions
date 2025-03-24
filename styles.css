@@ -125,6 +125,7 @@ body {
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: var(--bs-primary) !important;
 }
 
 .card-body {
@@ -540,6 +541,13 @@ footer {
 .form-floating > label {
     padding: 1rem 0.75rem;
     color: var(--secondary-color);
+}
+
+.btn-link {
+    transition: all 0.3s ease;
+}
+.btn-link:hover {
+    transform: translateX(5px);
 }
 
 /* =============================
