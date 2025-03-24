@@ -2,31 +2,76 @@
    Global Styles & Dark Mode Tweaks
    ============================= */
 :root {
+    /* Primary Colors */
     --primary-color: #0d6efd;
+    --primary-dark: #0b5ed7;
+    --primary-light: #0dcaf0;
     --primary-soft: rgba(13, 110, 253, 0.1);
+    
+    /* Secondary Colors */
     --secondary-color: #6c757d;
+    --secondary-dark: #5a6268;
+    --secondary-light: #adb5bd;
+    
+    /* Background Colors */
     --bg-dark: #121212;
-    --footer-bg: #0a0a0a;
-    --text-light: #f8f9fa;
+    --bg-darker: #0a0a0a;
+    --bg-light: #1a1a1a;
     --card-bg: #1a1a1a;
+    
+    /* Text Colors */
+    --text-light: #f8f9fa;
+    --text-dark: #212529;
+    --text-muted: #6c757d;
+    
+    /* Accent Colors */
+    --success-color: #198754;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --info-color: #0dcaf0;
+    
+    /* Effects */
     --hover-light: rgba(255, 255, 255, 0.1);
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
     --transition-speed: 0.3s;
 }
 
+/* =============================
+   Base Styles
+   ============================= */
 body {
     background-color: var(--bg-dark);
     color: var(--text-light);
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     overflow-x: hidden;
     line-height: 1.6;
 }
 
 /* =============================
-   Navbar Customizations
+   Typography
+   ============================= */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-light);
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--text-light);
+    opacity: 0.9;
+}
+
+/* =============================
+   Navigation
    ============================= */
 .navbar {
-    background-color: var(--bg-dark) !important;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--bg-darker) !important;
+    box-shadow: var(--shadow-sm);
     padding: 1rem 0;
 }
 
@@ -34,6 +79,8 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 
 .navbar-brand img {
@@ -48,18 +95,19 @@ body {
 }
 
 .navbar-nav .nav-link {
-    color: var(--text-light);
-    transition: color var(--transition-speed) ease-in-out;
+    color: var(--text-light) !important;
+    opacity: 0.8;
+    transition: opacity var(--transition-speed) ease;
     padding: 0.5rem 1rem;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    color: var(--primary-color);
+    opacity: 1;
 }
 
 /* =============================
-   Hero Section Enhancements
+   Hero Section
    ============================= */
 .hero-section {
     position: relative;
@@ -111,21 +159,20 @@ body {
 }
 
 /* =============================
-   Card & Services Section
+   Cards & Components
    ============================= */
 .card {
-    background: var(--card-bg);
+    background-color: var(--card-bg);
     color: var(--text-light);
     border: none;
     border-radius: 0.75rem;
-    transition: all var(--transition-speed) ease-in-out;
+    transition: all var(--transition-speed) ease;
     overflow: hidden;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    border-color: var(--bs-primary) !important;
+    box-shadow: var(--shadow-lg);
 }
 
 .card-body {
@@ -138,15 +185,18 @@ body {
     margin-bottom: 1rem;
 }
 
+/* =============================
+   Icons & Badges
+   ============================= */
 .icon-container {
-    width: 3rem;
-    height: 3rem;
+    width: 48px;
+    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0.75rem;
+    border-radius: 50%;
     background-color: var(--primary-soft);
-    margin-bottom: 1rem;
+    transition: all var(--transition-speed) ease;
 }
 
 .icon-container i {
@@ -154,44 +204,51 @@ body {
     color: var(--primary-color);
 }
 
+.badge {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.bg-primary-soft {
+    background-color: var(--primary-soft);
+}
+
 /* =============================
-   Process Timeline
+   Buttons
    ============================= */
-.process-timeline {
-    position: relative;
-    padding: 2rem 0;
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all var(--transition-speed) ease;
 }
 
-.process-timeline-line {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: var(--secondary-color);
-    opacity: 0.2;
-    z-index: 0;
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
-.process-step {
-    position: relative;
-    z-index: 1;
-    background: var(--card-bg);
-    border-radius: 0.75rem;
-    padding: 1.5rem;
-    transition: all var(--transition-speed) ease-in-out;
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
 }
 
-.process-step:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+.btn-outline-light {
+    border-width: 2px;
+}
+
+.btn-outline-light:hover {
+    transform: translateY(-2px);
 }
 
 /* =============================
-   Footer Enhancements
+   Footer
    ============================= */
 footer {
-    background: var(--footer-bg);
+    background-color: var(--bg-darker);
     padding: 4rem 0 2rem;
     color: var(--text-light);
 }
@@ -212,20 +269,23 @@ footer {
     border-radius: 50%;
     background: var(--hover-light);
     color: var(--text-light);
-    transition: all var(--transition-speed) ease-in-out;
+    transition: all var(--transition-speed) ease;
+    opacity: 0.8;
+    font-size: 1.25rem;
 }
 
 .social-links a:hover {
     background: var(--primary-color);
     color: var(--text-light);
     transform: translateY(-3px);
+    opacity: 1;
 }
 
 /* =============================
    Utility Classes
    ============================= */
 .hover-scale {
-    transition: transform var(--transition-speed) ease-in-out;
+    transition: transform var(--transition-speed) ease;
 }
 
 .hover-scale:hover {
@@ -253,301 +313,45 @@ footer {
     }
 }
 
-/* =============================
-   Responsive Adjustments
-   ============================= */
-@media (max-width: 768px) {
-    .hero-section h1 {
-        font-size: 2.5rem;
+@keyframes loading {
+    0% {
+        transform: translateX(-100%);
     }
-    
-    .hero-section p {
-        font-size: 1.1rem;
-    }
-    
-    .process-timeline-line {
-        display: none;
-    }
-    
-    .card {
-        margin-bottom: 1rem;
+    100% {
+        transform: translateX(100%);
     }
 }
 
 /* =============================
-   Loading Animation
+   Loading States
    ============================= */
-.page-loader {
-    position: fixed;
+.loading {
+    position: relative;
+    overflow: hidden;
+}
+
+.loading::after {
+    content: "";
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--primary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    transition: opacity 0.5s ease-out;
-}
-
-.page-loader.fade-out {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.loader {
-    width: 48px;
-    height: 48px;
-    border: 5px solid #FFF;
-    border-bottom-color: transparent;
-    border-radius: 50%;
-    display: inline-block;
-    box-sizing: border-box;
-    animation: rotation 1s linear infinite;
-}
-
-@keyframes rotation {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    animation: loading 1.5s infinite;
 }
 
 /* =============================
-   Progress Bar
+   Focus States
    ============================= */
-.progress-bar-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1030;
-}
-
-.progress {
-    height: 3px;
-    background-color: transparent;
-}
-
-.progress-bar {
-    background-color: var(--primary-color);
-    transition: width 0.2s ease-out;
-}
-
-/* =============================
-   Scroll to Top Button
-   ============================= */
-#scrollToTop {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: var(--primary-color);
-    color: white;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all var(--transition-speed) ease-in-out;
-    z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
-}
-
-#scrollToTop.visible {
-    opacity: 1;
-    visibility: visible;
-}
-
-#scrollToTop:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
-}
-
-/* =============================
-   Floating Contact Button
-   ============================= */
-.floating-contact {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    z-index: 1000;
-}
-
-.floating-contact .btn {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* =============================
-   Breadcrumb Navigation
-   ============================= */
-.breadcrumb {
-    background-color: var(--card-bg);
-    padding: 0.75rem 1rem;
-    border-radius: 0.5rem;
-    margin-bottom: 2rem;
-}
-
-.breadcrumb-item a {
-    color: var(--text-light);
-    text-decoration: none;
-    transition: color var(--transition-speed) ease-in-out;
-}
-
-.breadcrumb-item a:hover {
-    color: var(--primary-color);
-}
-
-.breadcrumb-item.active {
-    color: var(--secondary-color);
-}
-
-/* =============================
-   Framework Cards
-   ============================= */
-.framework-card {
-    background: var(--card-bg);
-    border-radius: 0.75rem;
-    padding: 1.5rem;
-    transition: all var(--transition-speed) ease-in-out;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.framework-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    border-color: var(--primary-color);
-}
-
-.framework-icon {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--primary-soft);
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-}
-
-.framework-icon i {
-    font-size: 2rem;
-    color: var(--primary-color);
-}
-
-/* =============================
-   Success Metrics
-   ============================= */
-.metric-card {
-    text-align: center;
-    padding: 2rem;
-    background: var(--card-bg);
-    border-radius: 0.75rem;
-    transition: all var(--transition-speed) ease-in-out;
-}
-
-.metric-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.metric-number {
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-}
-
-.metric-label {
-    color: var(--secondary-color);
-    font-size: 1rem;
-}
-
-/* =============================
-   Technology Stack
-   ============================= */
-.tech-stack {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-.tech-logo {
-    width: 80px;
-    height: auto;
-    transition: all var(--transition-speed) ease-in-out;
-    filter: grayscale(100%);
-}
-
-.tech-logo:hover {
-    filter: grayscale(0%);
-    transform: translateY(-3px);
-}
-
-/* =============================
-   Compliance Badges
-   ============================= */
-.compliance-badge {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    margin: 0.25rem;
-    transition: all var(--transition-speed) ease-in-out;
-}
-
-.compliance-badge:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* =============================
-   Form Elements
-   ============================= */
-.form-control {
-    background-color: var(--card-bg);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: var(--text-light);
-    padding: 0.75rem 1rem;
-    border-radius: 0.5rem;
-    transition: all var(--transition-speed) ease-in-out;
-}
-
-.form-control:focus {
-    background-color: var(--card-bg);
-    border-color: var(--primary-color);
-    color: var(--text-light);
-    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-}
-
-.form-floating > .form-control {
-    padding: 1rem 0.75rem;
-}
-
-.form-floating > label {
-    padding: 1rem 0.75rem;
-    color: var(--secondary-color);
-}
-
-.btn-link {
-    transition: all 0.3s ease;
-}
-.btn-link:hover {
-    transform: translateX(5px);
+:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
 }
 
 /* =============================
@@ -567,37 +371,23 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-soft);
+    background: var(--primary-dark);
 }
 
-.page-loader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #0d6efd;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-        transition: opacity 0.5s ease-out;
+/* =============================
+   Responsive Adjustments
+   ============================= */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
     }
-.page-loader.fade-out {
-        opacity: 0;
-        pointer-events: none;
+    
+    .hero-section p {
+        font-size: 1.1rem;
     }
-.loader {
-        width: 48px;
-        height: 48px;
-        border: 5px solid #FFF;
-        border-bottom-color: transparent;
-        border-radius: 50%;
-        display: inline-block;
-        box-sizing: border-box;
-        animation: rotation 1s linear infinite;
+    
+    .card {
+        margin-bottom: 1rem;
     }
-    @keyframes rotation {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
+}
+        

@@ -128,4 +128,60 @@ document.addEventListener('DOMContentLoaded', () => {
     document.documentElement.setAttribute('data-bs-theme', savedTheme);
     themeToggle.innerHTML = savedTheme === 'dark' ?
         '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+
+    /* =============================
+       Smooth Scroll
+       ============================= */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    /* =============================
+       Scroll to Top Button
+       ============================= */
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            scrollToTopBtn.style.display = 'block';
+        } else {
+            scrollToTopBtn.style.display = 'none';
+        }
+    });
+
+    scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    /* =============================
+       Page Loader
+       ============================= */
+    window.addEventListener('load', () => {
+        const loader = document.querySelector('.page-loader');
+        loader.classList.add('fade-out');
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 500);
+    });
+
+    /* =============================
+       Reading Progress Bar
+       ============================= */
+    window.addEventListener('scroll', () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.querySelector('.progress-bar').style.width = scrolled + '%';
+    });
 });
