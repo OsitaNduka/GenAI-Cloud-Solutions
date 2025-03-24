@@ -75,26 +75,61 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section min-vh-50 d-flex align-items-center">
-        <img src="assets/consulting.jpg" 
-        alt="AI Integration Services" 
-        class="w-100 hero-image position-absolute top-0 start-0" 
-        srcset="assets/consulting.jpg 1920w,
-                assets/consulting.jpg 1200w,
-                assets/consulting.jpg 800w"
-        sizes="100vw"
-        loading="eager"
-        style="object-fit: cover; object-position: top center; height: 100%;">
-        <div class="container position-relative text-white">
+    <section class="hero-section min-vh-75 d-flex align-items-center position-relative overflow-hidden">
+        <!-- Background Image with Gradient Overlay -->
+        <div class="hero-background position-absolute top-0 start-0 w-100 h-100">
+            <img src="assets/consulting.jpg" 
+                alt="AI Integration Services" 
+                class="w-100 h-100 object-fit-cover"
+                srcset="assets/consulting.jpg 1920w,
+                        assets/consulting.jpg 1200w,
+                        assets/consulting.jpg 800w"
+                sizes="100vw"
+                loading="eager"
+                fetchpriority="high">
+            <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+        </div>
+
+        <!-- Breadcrumb Navigation -->
+        <nav aria-label="breadcrumb" class="position-absolute top-0 start-0 w-100 py-3">
+            <div class="container">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Consulting</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="container position-relative z-1">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h1 class="display-4 mb-3 fw-bold">Cloud Consulting Services</h1>
-                    <p class="lead mb-4">GDPR-Compliant Solutions & AWS AI/ML Optimization for Enterprise Success</p>
-                    <a href="#packages" class="btn btn-primary btn-lg px-5">Explore Packages</a>
+                    <h1 class="display-4 mb-3 fw-bold text-white animate__animated animate__fadeInDown">
+                        Cloud Consulting Services
+                    </h1>
+                    <p class="lead mb-4 text-white-75 animate__animated animate__fadeInUp animate__delay-1s">
+                        GDPR-Compliant Solutions & AWS AI/ML Optimization for Enterprise Success
+                    </p>
+                    <div class="d-flex justify-content-center gap-3 animate__animated animate__fadeInUp animate__delay-2s">
+                        <a href="#packages" class="btn btn-primary btn-lg px-5">
+                            <i class="fas fa-rocket me-2"></i>Explore Packages
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg px-5">
+                            <i class="fas fa-envelope me-2"></i>Contact Us
+                        </a>
+                    </div>
                 </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator position-absolute bottom-0 start-50 translate-middle-x mb-4 animate__animated animate__fadeIn animate__delay-3s">
+                <a href="#services" class="text-white text-decoration-none">
+                    <i class="fas fa-chevron-down fa-2x"></i>
+                </a>
             </div>
         </div>
     </section>
+
 
     <!-- Main Content -->
     <main class="py-5">
