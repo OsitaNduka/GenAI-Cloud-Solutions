@@ -123,41 +123,61 @@
     </div>
 
     <!-- Hero Section -->
-    <header class="hero-section position-relative overflow-hidden min-vh-50" aria-labelledby="heroHeading">
-        <picture>
+    <section class="hero-section min-vh-75 d-flex align-items-center position-relative overflow-hidden">
+        <!-- Background Image with Gradient Overlay -->
+        <div class="hero-background position-absolute top-0 start-0 w-100 h-100">
             <img src="assets/enterprise-architecture.jpg" 
-                 alt="Enterprise architecture framework visualization with business and technology alignment"
-            class="w-100 hero-image position-absolute top-0 start-0" 
-            srcset="assets/enterprise-architecture.jpg 1920w,
-                    assets/enterprise-architecture.jpg 1200w,
-                    assets/enterprise-architecture.jpg 800w"
-            sizes="100vw"
-                 loading="eager"
-            style="object-fit: cover; object-position: top center; height: 100%;">
-        </picture>
-        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
-        <div class="container position-relative text-white d-flex flex-column justify-content-center text-center py-8">
-            <h1 id="heroHeading" class="display-4 mb-3 animate__animated animate__fadeInDown">Enterprise Architecture Solutions</h1>
-            <p class="lead mb-4 animate__animated animate__fadeInUp animate__delay-1s">
-                Align Technology Investments with Business Objectives
-            </p>
-            <div class="d-flex gap-3 justify-content-center animate__animated animate__fadeInUp animate__delay-2s">
-                <a href="contact.html" class="btn btn-primary btn-lg hover-scale">Start Your Assessment</a>
-                <a href="#benefits" class="btn btn-outline-light btn-lg hover-scale">View Benefits</a>
+                alt="Enterprise architecture framework visualization with business and technology alignment" 
+                class="w-100 h-100 object-fit-cover"
+                srcset="assets/enterprise-architecture.jpg 1920w,
+                        assets/enterprise-architecture.jpg 1200w,
+                        assets/enterprise-architecture.jpg 800w"
+                sizes="100vw"
+                loading="eager"
+                fetchpriority="high">
+            <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+        </div>
+
+        <!-- Breadcrumb Navigation -->
+        <nav aria-label="breadcrumb" class="position-absolute top-0 start-0 w-100 py-3">
+            <div class="container">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index.html#services" class="text-white text-decoration-none">Services</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Enterprise Architecture</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="container position-relative z-1">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-4 mb-3 fw-bold text-white animate__animated animate__fadeInDown">
+                        Enterprise Architecture Solutions
+                    </h1>
+                    <p class="lead mb-4 text-white-75 animate__animated animate__fadeInUp animate__delay-1s">
+                        Align Technology Investments with Business Objectives
+                    </p>
+                    <div class="d-flex justify-content-center gap-3 animate__animated animate__fadeInUp animate__delay-2s">
+                        <a href="contact.html" class="btn btn-primary btn-lg px-5">
+                            <i class="fas fa-rocket me-2"></i>Start Your Assessment
+                        </a>
+                        <a href="#benefits" class="btn btn-outline-light btn-lg px-5">
+                            <i class="fas fa-chart-line me-2"></i>View Benefits
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator position-absolute bottom-0 start-50 translate-middle-x mb-4 animate__animated animate__fadeIn animate__delay-3s">
+                <a href="#benefits" class="text-white text-decoration-none">
+                    <i class="fas fa-chevron-down fa-2x"></i>
+                </a>
             </div>
         </div>
-    </header>
-
-    <!-- Breadcrumb Navigation -->
-    <nav aria-label="breadcrumb" class="bg-light py-2 border-bottom">
-        <div class="container">
-            <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
-                <li class="breadcrumb-item"><a href="index.html#services" class="text-decoration-none">Services</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Enterprise Architecture</li>
-            </ol>
-        </div>
-    </nav>
+    </section>
 
     <!-- Main Content -->
     <main id="main-content" class="service-content py-6">
@@ -659,5 +679,8 @@
     
     <!-- Custom Scripts -->
     <script src="script.js"></script>
+
+    <!-- Add this to your existing styles -->
+    
 </body>
 </html>
