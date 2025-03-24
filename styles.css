@@ -578,7 +578,7 @@ footer {
    ============================= */
 .gradient-border {
     position: relative;
-    background: var(--bg-dark);
+    background: var(--bg-light);
     border-radius: 0.75rem;
     padding: 1px;
 }
